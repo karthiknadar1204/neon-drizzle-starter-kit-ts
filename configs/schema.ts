@@ -1,4 +1,5 @@
-import { pgTable, serial, text, timestamp, varchar, uuid, json, boolean } from 'drizzle-orm/pg-core';
+import { pgTable, serial, text, timestamp, varchar, uuid, json, boolean, integer, jsonb } from 'drizzle-orm/pg-core';
+import { relations } from 'drizzle-orm';
 
 // Users table
 export const users = pgTable('users', {
@@ -44,3 +45,19 @@ export const chatMessages = pgTable('chat_messages', {
   content: text('content').notNull(),
   createdAt: timestamp('created_at').defaultNow(),
 });
+
+// PDF images table
+export const pdfImages = pgTable('pdf_images', {
+  id: serial('id').primaryKey(),
+  documentId: integer('document_id').references(() => documents.id, { onDelete: 'cascade' }),
+  pageNumber: integer('page_number').notNull(),
+  imageUrl: text('image_url').notNull(),
+  imageKey: text('image_key').notNull(),
+  uploadedAt: timestamp('uploaded_at').defaultNow(),
+  metadata: jsonb('metadata')
+});
+
+// Add the relation to your documents table
+export const documentsRelations = relations(documents, ({ many }) => ({
+  pdfImages: many(pdfImages)
+}));

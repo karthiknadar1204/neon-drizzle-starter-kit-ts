@@ -1,6 +1,7 @@
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 import { getAuth } from "@clerk/nextjs/server";
 import { UploadThingError } from "uploadthing/server";
+import { auth } from "@clerk/nextjs/server";
 
 const f = createUploadthing();
 
@@ -33,6 +34,15 @@ export const ourFileRouter = {
         size: file.size,
         key: file.key
       };
+    }),
+
+  pdfImageUploader: f({ image: { maxFileSize: "4MB" } })
+    .middleware(async ({ req }) => {
+      const user = auth();
+      return { userId: user.userId };
+    })
+    .onUploadComplete(async ({ metadata, file }) => {
+      return { uploadedBy: metadata.userId, url: file.url, key: file.key };
     }),
 } satisfies FileRouter;
 
