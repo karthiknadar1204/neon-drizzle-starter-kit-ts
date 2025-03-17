@@ -1,27 +1,58 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Upload } from "lucide-react";
+import { Upload, FileText, Calendar } from "lucide-react";
 import { UploadDropzone } from "@/utils/uploadthing";
 import { useUser } from "@clerk/nextjs";
 import { saveDocument } from "@/actions/document";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
+import axios from "axios";
+import { processPDF } from "@/actions/pdf-processor";
 
 export default function ChatWithPDF() {
   const [isUploading, setIsUploading] = useState(false);
   const [documentTitle, setDocumentTitle] = useState("");
+  const [documents, setDocuments] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
   const { user } = useUser();
   const { toast } = useToast();
   const router = useRouter();
+
+  useEffect(() => {
+    const fetchDocuments = async () => {
+      if (!user) return;
+      
+      try {
+        setIsLoading(true);
+        const response = await axios.get('/api/documents');
+        setDocuments(response.data);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error fetching documents:", error);
+        toast({
+          title: "Error",
+          description: "Failed to load your documents",
+          variant: "destructive",
+        });
+        setIsLoading(false);
+      }
+    };
+
+    if (user) {
+      fetchDocuments();
+    }
+  }, [user, toast]);
 
   const handleUpload = async (result: any) => {
     if (!user || !result) return;
     
     try {
+      console.log("Starting document upload process with:", result);
+      
       // Use the document title or fallback to the filename without extension
       const title = documentTitle.trim() || result.name.replace(/\.[^/.]+$/, "") || "Untitled Document";
       
@@ -33,6 +64,8 @@ export default function ChatWithPDF() {
         fileKey: result.key,
         fileSize: result.size,
       });
+      
+      console.log("Document save response:", response);
       
       if (response.success && response.documentId) {
         toast({
@@ -59,11 +92,21 @@ export default function ChatWithPDF() {
     }
   };
 
+  // Format date to a readable string
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric' 
+    });
+  };
+
   return (
     <div className="container mx-auto py-10 px-4 max-w-5xl">
       <h1 className="text-3xl font-bold mb-6">Chat with PDF</h1>
       
-      <Card className="w-full max-w-3xl mx-auto">
+      <Card className="w-full max-w-3xl mx-auto mb-10">
         <CardHeader>
           <CardTitle>Upload Document</CardTitle>
           <CardDescription>
@@ -122,6 +165,51 @@ export default function ChatWithPDF() {
           </p>
         </CardContent>
       </Card>
+      
+      {/* Document Cards Section */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-semibold mb-6">Your Documents</h2>
+        
+        {isLoading ? (
+          <div className="flex justify-center items-center h-40">
+            <p className="text-muted-foreground">Loading your documents...</p>
+          </div>
+        ) : documents.length === 0 ? (
+          <div className="text-center py-10 border rounded-lg bg-muted/20">
+            <FileText className="h-10 w-10 mx-auto text-muted-foreground mb-2" />
+            <p className="text-muted-foreground">You haven't uploaded any documents yet</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {documents.map((doc) => (
+              <Card key={doc.id} className="overflow-hidden hover:shadow-md transition-shadow">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-lg truncate">{doc.title}</CardTitle>
+                  <CardDescription className="truncate">{doc.fileName}</CardDescription>
+                </CardHeader>
+                <CardContent className="pb-2">
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <Calendar className="h-4 w-4 mr-1" />
+                    <span>Uploaded on {formatDate(doc.createdAt)}</span>
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-1">
+                    {Math.round(doc.fileSize / 1024)} KB
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button 
+                    variant="default" 
+                    className="w-full"
+                    onClick={() => router.push(`/chat-with-pdf/${doc.id}`)}
+                  >
+                    Chat with this PDF
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 } 
