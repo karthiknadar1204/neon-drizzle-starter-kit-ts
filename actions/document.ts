@@ -82,11 +82,37 @@ export async function saveDocument(documentData: DocumentData) {
         // Count the number of pages
         const pageCount = docs.length;
         
+        // Create images directory for this document
+        const imagesDir = path.join(process.cwd(), 'data', 'images', documentId.toString());
+        try {
+          await fs.mkdir(imagesDir, { recursive: true });
+        } catch (error) {
+          console.log("Images directory already exists or couldn't be created");
+        }
+        
+        // Extract images from PDF pages
+        const pdf2img = await import("pdf-img-convert");
+        const pdfImages = await pdf2img.convert(tempFilePath);
+        
+        // Save images and create references
+        const imageReferences = await Promise.all(pdfImages.map(async (imageBuffer, index) => {
+          const imagePath = path.join(imagesDir, `page_${index + 1}.png`);
+          const relativeImagePath = path.relative(process.cwd(), imagePath);
+          
+          await fs.writeFile(imagePath, imageBuffer);
+          
+          return {
+            pageNumber: index + 1,
+            imagePath: relativeImagePath
+          };
+        }));
+        
         // Extract page-wise content
         const pagesContent = docs.map((doc, index) => ({
           pageNumber: index + 1,
           content: doc.pageContent,
-          metadata: doc.metadata
+          metadata: doc.metadata,
+          image: imageReferences.find(img => img.pageNumber === index + 1)?.imagePath || null
         }));
         
         // Create a data directory if it doesn't exist
@@ -104,14 +130,15 @@ export async function saveDocument(documentData: DocumentData) {
           JSON.stringify({
             documentId,
             pageCount,
-            pages: pagesContent
+            pages: pagesContent,
+            images: imageReferences
           }, null, 2)
         );
         
         // Clean up the temporary file
         await fs.unlink(tempFilePath);
         
-        console.log(`PDF processed successfully. Page count: ${pageCount}`);
+        console.log(`PDF processed successfully. Page count: ${pageCount}, Images extracted: ${imageReferences.length}`);
       } catch (processingError) {
         console.error("Error processing PDF:", processingError);
         // We don't want to fail the document save if processing fails
