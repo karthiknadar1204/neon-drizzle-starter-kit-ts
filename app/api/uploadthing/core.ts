@@ -8,26 +8,21 @@ const f = createUploadthing();
 export const ourFileRouter = {
   pdfUploader: f({
     pdf: {
-      maxFileSize: "16MB",
+      maxFileSize: "128MB",
       maxFileCount: 1,
     },
   })
     .middleware(async ({ req }) => {
-
       const { userId } = getAuth(req);
       
-
       if (!userId) throw new UploadThingError("Unauthorized");
       
-
       return { userId };
     })
     .onUploadComplete(async ({ metadata, file }) => {
-
       console.log("Upload complete for userId:", metadata.userId);
       console.log("PDF file URL:", file.url);
       
-
       return { 
         url: file.url,
         name: file.name,
@@ -36,7 +31,11 @@ export const ourFileRouter = {
       };
     }),
 
-  pdfImageUploader: f({ image: { maxFileSize: "4MB" } })
+  pdfImageUploader: f({ 
+    image: { 
+      maxFileSize: "32MB",
+    } 
+  })
     .middleware(async ({ req }) => {
       const user = auth();
       return { userId: user.userId };

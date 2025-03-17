@@ -90,9 +90,18 @@ export async function saveDocument(documentData: DocumentData) {
           console.log("Images directory already exists or couldn't be created");
         }
         
-        // Extract images from PDF pages
+        // Extract images from PDF pages with increased size limit
         const pdf2img = await import("pdf-img-convert");
-        const pdfImages = await pdf2img.convert(tempFilePath);
+        const pdfImages = await pdf2img.convert(tempFilePath, {
+          // Set higher resolution and quality options
+          width: 2000,         // Increased width
+          height: 2000,        // Increased height
+          scale: 2.0,          // Higher scale factor
+          base64: false,       // We want binary data, not base64
+          density: 300,        // Higher DPI
+          outputFormat: "png", // Use PNG format
+          page: null           // Convert all pages
+        });
         
         // Save images and create references
         const imageReferences = await Promise.all(pdfImages.map(async (imageBuffer, index) => {
