@@ -135,6 +135,7 @@ export async function saveDocument(documentData: DocumentData) {
     (async () => {
       try {
         // Download the PDF
+        console.log("Downloading PDF from Firebase:", documentData.fileUrl);
         const response = await fetch(documentData.fileUrl);
         if (!response.ok) {
           throw new Error(`Failed to fetch PDF: ${response.statusText}`);
@@ -166,7 +167,7 @@ export async function saveDocument(documentData: DocumentData) {
         const pageCount = docs.length;
         
         // Process pages in smaller batches with limited concurrency
-        const batchSize = 2; // Process only 2 pages at a time
+        const batchSize = 20; // Process 20 pages at a time
         const imageReferences = [];
         
         for (let i = 0; i < pageCount; i += batchSize) {

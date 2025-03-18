@@ -1,0 +1,2401 @@
+{
+  "documentId": 42,
+  "pageCount": 63,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "content": "Module 1-\nNumber Theory\nDr. Sunil Kumar\nWinter Semester 2023-24\nBCSE309L",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 1
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_1.png?alt=media&token=c2b8a79a-77d3-471f-95cb-f92e05781b64"
+    },
+    {
+      "pageNumber": 2,
+      "content": "Outline\n•Finite Fields and Number Theory: \n•Modular arithmetic\n•Euclidian Algorithm",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 2
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_2.png?alt=media&token=bdcc346f-bcd3-4a30-a6c2-0487711e807a"
+    },
+    {
+      "pageNumber": 3,
+      "content": "Why?\n•Modern cryptography is based on Number Theory, a branch of \nmathematics concerned with the properties of integers.\n•In order to understand how modern cryptographic techniques work, \nand to estimate the extent to which they are secure, it is important to \nunderstand the basics of number theory.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 3
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_3.png?alt=media&token=ac167735-2726-4786-96b4-d32267e1695f"
+    },
+    {
+      "pageNumber": 4,
+      "content": "4\nDivisibility and Divisors\n•We say that bdivides a(or ais divisible by b)if:\n•b> 0\nand:\n•the ratio        is an integer.\n•This property underlies all number theory, so we have a \nnotation for it:\nand we say that bis a divisorof a\n푎\n푏\n푏|푎",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 4
+        }
+      },
+      "firebaseUrl": null
+    },
+    {
+      "pageNumber": 5,
+      "content": "5\nDivisibility and Divisors\n•Here are some relations:\n1)If a|1, then a= ±1\n2)If a|band b|a, then a= ±b\n3)Any divides 0\n4)If b|gand b|h, then b|(mg+ nh) for arbitrary integers mand n\n5)If a|band b|c, then a|c\n6)If nis a positive number > 1, and dis the smallest divisor of nthat is greater \nthan 1, then dis prime.\n푏≠0 ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 5
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_5.png?alt=media&token=75bb4fa8-40bb-474b-9bf9-4fa6135597ff"
+    },
+    {
+      "pageNumber": 6,
+      "content": "Decomposition in Product of Primes\nTheorem(Fundamental Theorem of Arithmetic)\nAny integer number n > 1 can be written as a product of prime \nnumbers (>1), and the product is unique if the numbers are written in \nincreasing order.\nExample:   84 = 2\n2\n•3•7 \nek\nk\ne\ne\np\np\np\nn\n...\n2\n2\n1\n1\n=",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 6
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_6.png?alt=media&token=191417a6-965f-465c-9fcb-8f7a0f2eedbf"
+    },
+    {
+      "pageNumber": 7,
+      "content": "GCD\n•a common problem in number theory\ngcd(a, b) = 푚푎푥[푘,푠푢푐ℎ푡ℎ푎푡푘|푎푎푛푑푘|푏]\nTheorem(GCD and Multiplication)\nGiven integers a, b, m >1. If\ngcd(a, m) = gcd(b, m) = 1, then gcd(ab, m) = 1\nTheorem(GCD and Division)\nGiven integers a>0, b, q, r, such that  b = aq+ r,\nthen gcd(b, a) = gcd(a, r).",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 7
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_7.png?alt=media&token=97a6e864-4955-4e9f-8bac-c2022ac1255c"
+    },
+    {
+      "pageNumber": 8,
+      "content": "Euclidean Algorithm\n•an efficient way to find the GCD(a,b)\n•uses theorem that: \n•GCD(a,b) = GCD(b, a mod b)\n•Euclidean Algorithm to compute GCD(a,b) is: \nEUCLID(a,b)\n1. A = a; B = b \n2. if B = 0 \nreturn  A = gcd(a, b) \n3. R = A mod B \n4. A = B \n5. B = R \n6. goto2",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 8
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_8.png?alt=media&token=f8c954f1-859e-4798-b1df-e4b205df3dca"
+    },
+    {
+      "pageNumber": 9,
+      "content": "Modular Arithmetic Operations\n•is 'clock arithmetic'\n•uses a finite number of values, and loops back from either end\n•modular arithmetic is when do addition & multiplication and modulo \nreduce answer\n•can do reduction at any point, ie\n•a+b mod n = [a mod n + b mod n] mod n ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 9
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_9.png?alt=media&token=c26e534b-4d02-4db9-a3cc-0630d100afa2"
+    },
+    {
+      "pageNumber": 10,
+      "content": "Modular Arithmetic\n•define modulo operator “a mod n” to be remainder when a is \ndivided by n\nExample:\n7 mod 3 = 1     -7 mod 3 = 2\nrnqaqrna+==  s.t. ,  mod \n \nwhere \n0\n\nr\n\nn\n−\n1",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 10
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_10.png?alt=media&token=53529ddf-512b-4986-a7eb-0162054338b8"
+    },
+    {
+      "pageNumber": 11,
+      "content": "Congruence Relation\nDefinition:Let a, b, n be integers with n>0, we say \nthat   a b (mod n),   \nif a –b is a multiple of n.\nProperties:a b (mod n)  \nif and only if    n | (a –b)\nif and only if    n | (b –a)\nif and only if    a = b+k·nfor some integer k\nif and only if    b = a+k·nfor some integer k\nE.g., 327 (mod 5),  -1237 (mod 7),  \n1717 (mod 13)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 11
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_11.png?alt=media&token=85813812-ab79-4ca2-b311-d3f863fbb30e"
+    },
+    {
+      "pageNumber": 12,
+      "content": "Properties of the Congruence Relation\nProposition:Let a, b, c, n be integers with n>0\n1.a 0 (mod n)  if and only if  n | a\n2.a a (mod n)\n3.a b (mod n)  if and only if  b a (mod n)\n4.if a b and b c (mod n), then a c (mod n)\nCorollary:Congruence modulo n is an equivalence relation.\nEvery integer is congruent to exactly one number in {0, 1, 2, ..., n–1} \nmodulo n",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 12
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_12.png?alt=media&token=bc2b82db-fcfb-48b8-a9d3-80e818a9bd14"
+    },
+    {
+      "pageNumber": 13,
+      "content": "Properties of the Congruence Relation\nProposition: Let a, b, c, n be integers with n>0\nIf a b (mod n) and c d (mod n), then:\na +c b + d (mod n), \na –c b –d (mod n),\na·cb·d(mod n) \nE.g., 5 12 (mod 7)  and  3 -4 (mod 7), then, ... ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 13
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_13.png?alt=media&token=c296fef0-4dca-44a8-a9eb-d04c0b108293"
+    },
+    {
+      "pageNumber": 14,
+      "content": "Properties of Modular Arithmetic\nModular arithmetic exhibits the following properties:\n[(a mod n) + (b mod n)] mod n = (a + b) mod n \n[(a mod n) -(b mod n)] mod n = (a -b) mod n \n[(a mod n) * (b mod n)] mod n = (a * b) mod n \nthe rules for ordinary arithmetic involving addition, \nsubtraction, and multiplication carry over into modular \narithmetic.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 14
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_14.png?alt=media&token=626168fc-54fa-4e50-828c-b240b138e3f3"
+    },
+    {
+      "pageNumber": 15,
+      "content": "Properties of Modular Arithmetic for Integers in Z\nn\n•Commutative laws\n•Associative laws \n•Distributive laws \n•Identities\n•Additive inverse (-w)\n(w + x) mod n = (x + w) mod n \n(w x x) mod n = (x x w) mod n\n[(w + x) + y] mod n = [w + (x + y)] mod n \n[(w x x) x y] mod n = [w x (x x y)] mod n\n[w + (x + y)] mod n = [(w x x) + (w x y)] mod n \n[w + (x x y)] mod n = [(w + x) x (w + y)] mod n\nFor each w  Z\nn\n, there exists a z such that w + z ≡ 0 mod n\n(0 + w) mod n = w mod n \n(1 + w) mod n = w mod n",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 15
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_15.png?alt=media&token=d5f010e8-492a-4158-a112-789b9ca72494"
+    },
+    {
+      "pageNumber": 16,
+      "content": "Multiplicative Inverse\n•Definition:  Given integers n>0, a, b, we say that b is a \nmultiplicative inverse of a modulo n if \nab 1 (mod n).\n•Proposition: Given integers n>0 and a, then a has a \nmultiplicative inverse modulo n if and if only if a and n are \nrelatively prime. ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 16
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_16.png?alt=media&token=fee080fc-c584-4eca-a389-952bc166534f"
+    },
+    {
+      "pageNumber": 17,
+      "content": "Modulo 8 Multiplicative Inverse Example\nNote that not all integers mod 8 have a multiplicative inverse ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 17
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_17.png?alt=media&token=f0f618e3-480b-4b7f-a6a9-f6c18a77bd1b"
+    },
+    {
+      "pageNumber": 18,
+      "content": "Modulo 8 Addition Example\n+01234567\n001234567\n112345670\n223456701\n334567012\n445670123\n556701234\n667012345\n770123456",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 18
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_18.png?alt=media&token=d350d250-0f7f-4cd2-9113-e8b01ef4da45"
+    },
+    {
+      "pageNumber": 19,
+      "content": "Groups\n•A group, G, is a set of elements with an associated binary operation, .  It is sometimes \ndenoted {G,   }\n•For each ordered pair (a, b) of elements in G, there is an associated element (ab), such that \nthe following axioms hold:\n•\n•\ne\na\na'\na'\na\nG\na'\nG\na\nG\na\na\na\ne\ne\na\nG\ne\nG\na, b, c\nc\nb\na\nc\nb\na\nG\nb\na\nG\nb\na\n=\n•\n=\n•\n\n\n\n=\n•\n=\n•\n\n\n•\n•\n=\n•\n•\n\n•\n\n       \n          \n          \n          \nsuch that\n \n \n \nelement \nan \n \nis\n \n there\n \n \neach \nFor \n     \n:\n \n4)\n \n \n \nall\nfor \n  \n       \n          \n          \n          \nsuch that \n \n \n \nelement \nan \n \nis\n  \nThere\n    \n:\n \n3)\n \n \nall\nfor \n \n)\n(\n)\n(\n  \n          \n:\n \n2)\n \n \n then \n,\n \n \n \nand\n \n \nIf\n        \n          \n:\n \n1)\nelement\nInverse \nelement\nIdentity \ne\nAssociativ\nClosure\n•",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 19
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_19.png?alt=media&token=364d97c9-3d2f-49f0-830d-d74c33c463e1"
+    },
+    {
+      "pageNumber": 20,
+      "content": "Groups\n•A finite groupis a group with a finite number of elements, otherwise, \na group is an infinite group.\n•A group is said to be an abelian groupif it satisfies the following \ncondition:\n•Examples of abelian groups:\n•The set of integers (negative, zero, and positive), Z, under addition.  \nThe identity element of Zunder addition is 0; \nthe inverse of ais -a, for all ain Z.\n•The set of non-zero real numbers, R*, under multiplication.  \nThe identity element of R*under multiplication is 1; \nthe inverse of ais 1/afor all ain R*.\nG\na, b\na\nb\nb\na\n \n \n \nall\nfor \n \n      \n:\n \n5)\n\n•\n=\n•\n \ne\nCommutativ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 20
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_20.png?alt=media&token=072b82fa-4ad6-49da-bdc0-ef2b0f7b7287"
+    },
+    {
+      "pageNumber": 21,
+      "content": "Exponentiation and Cyclic Groups\n•Exponentiationwithin a group is repeated application of the group \noperator, such that:\n•A group Gis cyclicif every element of Gis a power g\nk\n(kis an integer) of  a \nfixed element gG.  The element gis said to generate the group, or to be \na generator of the group.\n•A cyclic group is always abelian, and may be finite or infinite\n•Example of a cyclic group:\n•The group of positive integers, {N, +}, (N= {1, 2, 3, ...}) under addition is an infinite cyclic \ngroup generated by the element 1.  (i.e. 1 + 1 = 2, 1 + 1 + 1 = 3, etc.)\na\na'\na'\na\nn-\na\na\na\na\ne\na\nn\n-n\nn\n \nof\n \ninverse\n \n the\nis\n \n \n  where\n,\n)\n(\n times)\n1\n \napplied\n \n(i.e.\n   \nelement\nidentity \n \n    the\n,\n0\n=\n•\n•\n•\n•\n=\n=\n\n",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 21
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_21.png?alt=media&token=12c2cc42-6f78-4616-a515-00255645a9c4"
+    },
+    {
+      "pageNumber": 22,
+      "content": "Rings\n•A ring, R, denoted by {R, +, }, is a set of elements with two binary operations, called \naddition(+) and multiplication(   ), such that, for a, b, cin R:\n1)-5)R is an abelian group with respect to addition; for this case of an additive group, we denote the \nidentity element as 0, and the inverse of aas -a.\n6)Closure under multiplication:\nIf aand bbelong to R, then abis also in R\n7)Associativity of multiplication:\na(bc) = (ab)    cfor all a, b, c, in R\n8)Distributive Laws:\nNote that we often \nwrite a b as simply ab \naddition and multiplication are abstract operations here\n\n\n\n\n\n",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 22
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_22.png?alt=media&token=8fc8476f-3ce0-40ba-a539-90703211ad0d"
+    },
+    {
+      "pageNumber": 23,
+      "content": "Commutative Rings\n•A ring is commutativeif it satisfies the following additional condition:\n9)Commutativity of multiplication: \na     b = b    a  for all a, b, c, in R\nExample of a commutative ring:\nThe set of even integers, {..., -4, -2, 0, 2, 4, ...}) under the normally \ndefined integer operations of addition and multiplication.\n",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 23
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_23.png?alt=media&token=16b8c577-e0f4-4c9e-871e-3b3588aefc1b"
+    },
+    {
+      "pageNumber": 24,
+      "content": "Integral Domains\n•An integral domainis a commutative ring that obeys the following:\n10)Multiplicative identity:\nThere is an element 1 in Rsuch that ax1 = 1 xa= afor all ain R\n11)No zero divisors:\nIf a, bin Rand ax b= 0, then either a= 0 or b= 0\nExample of an integral domain:\nThe set of all integers (Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}) under the normally \ndefined integer operations of addition and multiplication, {Z, +, x}",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 24
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_24.png?alt=media&token=bb7a7285-41ba-40c1-9a32-9aca654029b2"
+    },
+    {
+      "pageNumber": 25,
+      "content": "Fields\n•A field, F, denoted by {F, +, x}, is a set of elements with two binary \noperations, called additionand multiplication, such that, for all a, b, c\nin F, the following apply:\n1)-11)F is an integral domain\n12)Multiplicative inverse:\nFor each ain F, except 0, there is an element a\n-1\nin Fsuch that:\nax a\n-1\n= a\n-1\nxa= 1\nAgain, addition and multiplication are abstract operations\n",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 25
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_25.png?alt=media&token=6c40f632-7df5-457e-b315-1498b5b4dc25"
+    },
+    {
+      "pageNumber": 26,
+      "content": "Fields\n•A field is a set in which we can do addition, subtraction, multiplication, and \ndivision without leaving the set.\n•Division is defined:\na/b= a(b\n-1\n)\nExamples:\n•The set of rational numbers, Q;  the set of real numbers, R, the set of complex \nnumbers, C.\n•The set of all integers, Z, is nota field, because only the elements 1 and -1 \nhave multiplicative inverses in the integers.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 26
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_26.png?alt=media&token=72ceef13-77d0-4b78-b0b7-ba047ec8d345"
+    },
+    {
+      "pageNumber": 27,
+      "content": "Groups, Rings, and Fields\nGroups\nAbelian Groups\nRings\nCommutative Rings\nInteger Domains\nFields",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 27
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_27.png?alt=media&token=232f0b1b-6291-4191-a6be-55e5bdad598a"
+    },
+    {
+      "pageNumber": 28,
+      "content": "Groups, Rings, and Fields",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 28
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_28.png?alt=media&token=fb5f356e-8df0-4db2-80c0-e5be7101fb63"
+    },
+    {
+      "pageNumber": 29,
+      "content": "Galois Fields\n•finite fields play a key role in cryptography\n•order (number of elements) in a finite field mustbe a power of a \nprime 푝\n푛\n•known as Galois fields\n•denoted 퐺퐹(푝\n푛\n)\n•Two cases:\n•퐺퐹푝,푛=1\n•퐺퐹푝\n푛\n,푛>1\n•GP(P) has a different structure than 퐺퐹푝\n푛",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 29
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_29.png?alt=media&token=e1617508-8531-4ad1-a3b8-0e3687247a48"
+    },
+    {
+      "pageNumber": 30,
+      "content": "Galois Fields GF(p)\n•퐺퐹(푝)is the set of integers {0,1,...,푝−1}with arithmetic operations modulo \nprime 푝\n•푍\n푛\nhas a multiplicative inverse if and only if that integer is relatively prime to 푛. \n•If is 푛prime, then all ofthe nonzero integers in are relatively prime to , and \ntherefore there exists a multiplicative inverse for all ofthe nonzero integers in 푍\n푛\n.\n•these form a finite field\n•since have multiplicative inverses\n•Hence, can do addition, subtraction, multiplication, and division without leaving \nthe field GF(p)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 30
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_30.png?alt=media&token=5ce5cd91-8f7a-43ea-95c2-6650e04dbdcd"
+    },
+    {
+      "pageNumber": 31,
+      "content": "GF(7) Example \n\n0123456\n00000000\n10123456\n20246135\n30362514\n40415263\n50531642\n60654321\n+\n0123456\n00123456\n11234560\n22345601\n33456012\n44560123\n55601234\n66012345",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 31
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_31.png?alt=media&token=9500ab11-4a74-4f63-8976-6f2eaf90ea38"
+    },
+    {
+      "pageNumber": 32,
+      "content": "Finding Multiplicative Inverse in GF(푝)\nExtended Euclidean algorithm not only calculate the greatest common \ndivisor but also two additional integers and that satisfy the following \nequation.\n푎푠+푏푡 = 푑 = gcd(푎,푏) ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 32
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_32.png?alt=media&token=83394c83-d152-4b28-9b13-50f92b9bc22b"
+    },
+    {
+      "pageNumber": 33,
+      "content": "Euclidean Algorithm",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 33
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_33.png?alt=media&token=34d19de9-46d1-4bd9-b83d-dac5bec3a67f"
+    },
+    {
+      "pageNumber": 34,
+      "content": "Extended Euclidean algorithm",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 34
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_34.png?alt=media&token=f826e955-26a5-4fdb-b9e3-0ee758e7db74"
+    },
+    {
+      "pageNumber": 35,
+      "content": "Extended Euclidean algorithm",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 35
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_35.png?alt=media&token=67914257-ec59-45ad-80b9-83d13ed77b6b"
+    },
+    {
+      "pageNumber": 36,
+      "content": "Extended Euclidean algorithm: Example\n•a = 5 and b = 3, find gcd(a, b) and the values of s and t.\nqr1r2rs1s2st1t2t\n153210101-1\n132101-11-12\n22101-13-12-5\n10-132-5",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 36
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_36.png?alt=media&token=edf2e6d1-18f4-47d2-b117-768056b0d469"
+    },
+    {
+      "pageNumber": 37,
+      "content": "Extended Euclidean algorithm: Example\n•a = 161 and b = 28, find gcd(a, b) and the values of s and t.\nqr1r2rs1s2st1t2t\n5161282110101-5\n12821701-11-56\n321701-14-56-23\n10-146-23",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 37
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_37.png?alt=media&token=b2967d57-2e41-4f2e-b87a-9e644b0d55f1"
+    },
+    {
+      "pageNumber": 38,
+      "content": "Using extended Euclidean algorithm to find \nmultiplicative inverse\n푎푠+푏푡=푑=푔푐푑(푎,푏)\n푎푠+푏푡=1,푖푓푔푐푑푎,푏=1\n푎푠푚표푑푎+푏푡푚표푑푎푚표푑푎=1푚표푑푎\n0+푏푡푚표푑푎=1\n푏푡푚표푑푎=1\n푡=푏\n−1",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 38
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_38.png?alt=media&token=b3f012ac-ac00-44d4-8891-05abcbec882c"
+    },
+    {
+      "pageNumber": 39,
+      "content": "Using extended Euclidean algorithm to find \nmultiplicative inverse",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 39
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_39.png?alt=media&token=f8c585be-a415-4b7e-b758-4939038b58a9"
+    },
+    {
+      "pageNumber": 40,
+      "content": "Exercise\n•Find the multiplicative inverse of 11 in 푍\n26\n.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 40
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_40.png?alt=media&token=8ea0a8cd-dced-45e1-82b5-f1dac0cc237f"
+    },
+    {
+      "pageNumber": 41,
+      "content": "Exercise\n•Find the multiplicative inverse of 23 in 푍\n100\n.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 41
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_41.png?alt=media&token=94626d7a-0076-4e85-a380-8bf480fd989a"
+    },
+    {
+      "pageNumber": 42,
+      "content": "Polynomial Arithmetic\n•represent a bit pattern by a polynomial in, say, the variable x. Each \npower of x in the polynomial can stand for a bit position in a bit \npattern.\n•For example, we can represent the bit pattern 111 by the polynomial x\n2  \n+ x \n+ 1. \n•the bit pattern 101 would be represented by the polynomial x\n2\n+ 1.\n•representing a bit pattern with a polynomial will allow us to create \na finite field with bit patterns.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 42
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_42.png?alt=media&token=c1f593e6-487e-4235-acc2-5216dbf80418"
+    },
+    {
+      "pageNumber": 43,
+      "content": "Polynomial Arithmetic\n•Can compute using polynomials\n푓푥=푎\n푛\n푥\n푛\n+푎\n푛−1\n푥\n푛\n_\n1\n+...+푎\n1\n푥+푎\n0\n=෍\n푖=0\n푛\n푎\n푖\n푥\n푖\n•nb.not interested in any specific value of x\n•which is known as the indeterminate\n•Three classes of polynomial arithmetic\n•Ordinary polynomial arithmetic\n•Polynomial arithmetic in which the arithmetic on the coefficients \nis performed modulo 풑; that is, the coefficients are in 퐺퐹(푝)\n•Polynomial arithmetic in which the coefficients are in 퐺퐹(푝), and \nthe polynomials are defined modulo a polynomial 풎(풙)whose \nhighest power is some integer.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 43
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_43.png?alt=media&token=7d3ea291-9bdc-44cf-ae92-59d3ec3dc69f"
+    },
+    {
+      "pageNumber": 44,
+      "content": "Ordinary Polynomial Arithmetic\n•add or subtract corresponding coefficients\n•multiply all terms by each other\n•eg\nlet f(x) = x\n3\n+ x\n2\n+ 2 and g(x) = x\n2\n–x + 1\nf(x) + g(x) = x\n3\n+ 2x\n2\n–x + 3\nf(x) –g(x) = x\n3\n+ x + 1\nf(x) x g(x) = x\n5\n+ 3x\n2\n–2x + 2",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 44
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_44.png?alt=media&token=90d540e7-9c5e-4d0d-85cb-42d2372f53b5"
+    },
+    {
+      "pageNumber": 45,
+      "content": "Polynomial Arithmetic with Modulo Coefficients\n•when computing the value of each coefficient do calculation modulo \nsome value\n•forms a polynomial ring\n•could be modulo any prime\n•but we are most interested in mod 2\n•Sothe addition over GF (2) is equivalent to the logical XOR operation, \nand multiplication to the logical AND operation\n•ieall coefficients are 0 or 1\n•eg.let f(x) = x\n3\n+ x\n2\nand g(x) = x\n2\n+ x + 1\nf(x) + g(x) = x\n3\n+ x + 1\nf(x) x g(x) = x\n5\n+ x\n2",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 45
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_45.png?alt=media&token=346e22eb-729f-4614-938d-53a348ab960b"
+    },
+    {
+      "pageNumber": 46,
+      "content": "Polynomial Arithmetic with Coefficients in 푍\n푝\n•set of all polynomials over a field constitutes a ring. Such a ring is also \ncalled the polynomial ring.\n•polynomial multiplication is commutative, the set of polynomials over \na field is actually acommutative ring.\n•In light ofthe constraintswe have placed on what constitutes a \npolynomial, it does not make sense to talk about multiplicative \ninverses of polynomials in the set of all possible polynomials that can \nbe defined over a finite field. (polynomials do not contain negative \npowers of x.)\n•Polynomial division is not allowed for polynomials that are not \ndefined over fields. For example, for polynomials defined over the set \nof all integers, you cannot divide 4x\n2\n+ 5 by the polynomial 5x. ",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 46
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_46.png?alt=media&token=0833f64e-b8c3-4bfa-b151-66ed871156c4"
+    },
+    {
+      "pageNumber": 47,
+      "content": "Polynomial Division\n•Given polynomials 푓(푥)of degree 푛and 푔(푥)of degree (푚), \n푛≥푚,if we divide 푓(푥)by 푔(푥)\n푓(푥)=푞(푥)푔(푥)+푟(푥)\n•푟(푥)=푓(푥)푚표푑푔(푥)\n•퐷푒푔푟푒푒푞푥≤푛−푚\n•퐷푒푔푟푒푒푟(푥)≤푚−1\n•if 푔(푥)has no divisors other than itself & 1 say it is irreducible(or \nprime) polynomial\n•arithmetic modulo on irreducible polynomial forms a field",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 47
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_47.png?alt=media&token=1a3dab51-f631-4a4e-98ea-04216085b2b8"
+    },
+    {
+      "pageNumber": 48,
+      "content": "Finite fields of the form GF(2\nn\n) \n•For polynomials over 푝\n푛\n, with 푛>1, operations modulo 푝\n푛\ndo not produce \na field.\n•Modular polynomial arithmetic \n•With the appropriate definition of arithmetic operations, each such set S is \na finite field. \n1.Arithmetic follows the ordinary rules of polynomial arithmetic using the \nbasic rules of algebra, with the following two refinements.\n2.Arithmetic on the coefficients is performed modulo. That is, we use the \nrules of arithmetic for the finite field 푍\n푝\n. \n3.If multiplication results in a polynomial of degree greater than n-1, then \nthe polynomial is reduced modulo some irreducible polynomial m(x) of \ndegree n.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 48
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_48.png?alt=media&token=66077912-5d04-4038-85e5-970f318cf641"
+    },
+    {
+      "pageNumber": 49,
+      "content": "Finite fields of the form GF(2\nn\n) \n•can compute in field GF(2\nn\n) \n•polynomials with coefficients modulo 2\n•whose degree is less than n\n•hence must reduce modulo an irreducible poly of degree n (for multiplication \nonly)\n•form a finite field\n•can always find an inverse\n•can extend Euclid’s Inverse algorithm to find",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 49
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_49.png?alt=media&token=2b7e3d78-0aaf-4f63-ab3c-bc1305ebe1c7"
+    },
+    {
+      "pageNumber": 50,
+      "content": "Example GF(2\n3\n)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 50
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_50.png?alt=media&token=0f6b7c1e-a507-40db-a30b-1f706b2e983b"
+    },
+    {
+      "pageNumber": 51,
+      "content": "Example GF(2\n3\n)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 51
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_51.png?alt=media&token=72bd917e-516f-4c9e-a5d6-7ff273732bb4"
+    },
+    {
+      "pageNumber": 52,
+      "content": "Arithmetic in GF(2\n3\n)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 52
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_52.png?alt=media&token=47b52788-8f06-4095-bb7b-dfd4bae7d00c"
+    },
+    {
+      "pageNumber": 53,
+      "content": "Arithmetic in GF(2\n3\n)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 53
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_53.png?alt=media&token=49124191-3448-45e7-9963-92dd918c2635"
+    },
+    {
+      "pageNumber": 54,
+      "content": "Computational Considerations\n•since coefficients are 0 or 1, can represent any such polynomial as a \nbit string\n•addition becomes XOR of these bit strings\n•multiplication is shift & XOR\n•cflong-hand multiplication\n•modulo reduction done by repeatedly substituting highest power \nwith remainder of irreducible poly (also shift & XOR)",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 54
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_54.png?alt=media&token=e88966b1-e5a7-4afd-9573-5356148c8fbc"
+    },
+    {
+      "pageNumber": 55,
+      "content": "Computational Example\n•in GF(2\n3\n)  have (x\n2\n+1) is 101\n2\n& (x\n2\n+x+1) is 111\n2\n•soaddition is\n•(x\n2\n+1) + (x\n2\n+x+1) = x \n•101 XOR 111 = 010\n2\n•and multiplication is\n•(x+1).(x\n2\n+1) = x.(x\n2\n+1) + 1.(x\n2\n+1) \n= x\n3\n+x+x\n2\n+1 = x\n3\n+x\n2\n+x+1 \n•011.101 = (101)<<1 XOR (101)<<0 = \n1010 XOR 101 = 1111\n2\n•polynomial modulo reduction (get q(x) & r(x)) is\n•(x\n3\n+x\n2\n+x+1 ) mod (x\n3\n+x+1) = 1.(x\n3\n+x+1) + (x\n2\n) = x\n2\n•1111 mod 1011 = 1111 XOR 1011 = 0100\n2",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 55
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_55.png?alt=media&token=55027554-1685-40b7-8d13-594caf4e8062"
+    },
+    {
+      "pageNumber": 56,
+      "content": "Polynomial GCD\n•gcd[a(x), b(x)] is the polynomial of maximum degree that divides \nboth a(x) and b(x).\n•gcd[a(x), b(x)] = gcd[b(x), a(x)mod(b(x))]\n•Euclid[a(x), b(x)]\n1.A(x) a(x); B(x) b(x)\n2.if B(x) = 0 return A(x) = gcd[a(x), b(x)]\n3.R(x) = A(x) mod B(x)\n4.A(x) B(x)\n5.B(x) R(x)\n6.goto2",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 56
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_56.png?alt=media&token=7d993e19-b03f-4a9d-ae72-3cdda0f12811"
+    },
+    {
+      "pageNumber": 57,
+      "content": "Example of GCD in Z\n2\n or in GF(2),\nStep1, gcd(A(x), B(x))\nA(x) = x\n6\n + x\n5\n + x\n4\n + x\n3\n + x\n2\n + 1, \nB(x) = x\n4\n + x\n2\n + x + 1; D(x)= x\n2\n + x; \nR(x) = x\n3\n + x\n2\n + 1\nStep 2, \nA(x) = B(x) = x\n4\n + x\n2\n + x + 1; \nB(x) = R(x) = x\n3\n + x\n2\n + 1, \nD(x) = x + 1; R(x) =0;\nStep 3, \nA(x) = B(x) = x\n3\n + x\n2\n + 1; \nB(x) = R(x) = 0;\ngcd(A(x), B(x)) = x\n3\n + x\n2\n + 1",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 57
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_57.png?alt=media&token=0e0c2caf-57e6-4c38-bcac-5029ea8dc090"
+    },
+    {
+      "pageNumber": 58,
+      "content": "Finding the Multiplicative Inverse\n•The extended Euclid’s algorithm can be adapted to find the \nmultiplicative inverse of a polynomial. \n•The algorithm will find multiplicative inverse of b(x) modulo m(x) if \nthe degree of b(x) is less than degree of m(x) and gcd[m(x),b(x)]=1. \n•If m(x) is an irreducible polynomial, then it has no other factor than \nitself or 1.\n•so that gcd[m(x),b(x)]=1.",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 58
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_58.png?alt=media&token=4a29d4ad-c7e1-40f6-86e1-269628ab0a5f"
+    },
+    {
+      "pageNumber": 59,
+      "content": "Finding the Multiplicative Inverse\nEXTENDED EUCLID[m(x),b(x)]\n1.[A1(x), A2(x), A3(x)]:=[1,0,m(x)]; [B1(x), B2(x), B3(x)]:=[0,1,b(x)];\n2.if B3(x)=0 return A3(x)= gcd[m(x),b(x)]; no inverse\n3.if B3(x)=1 return B3(x)= gcd[m(x),b(x)]; B2(x)=b(x)-1 mod m(x)\n4.Q(x):= quotient of A3(x)/B3(x)\n5.[T1(x), T2(x), T3(x)]:= [A1(x)-QB1(x), A2(x) –QB2(x), A3(x) –QB3(x)]\n6.[A1(x), A2(x), A3(x)]:= [B1(x), B2(x), B3(x)]\n7.[B1(x), B2(x), B3(x)]:= [T1(x), T2(x), T3(x)]\n8.goto2",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 59
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_59.png?alt=media&token=f06c5891-aed7-4217-93f3-9c068e5c9813"
+    },
+    {
+      "pageNumber": 60,
+      "content": "Finding the Multiplicative Inverse\ncalculation of the multiplicative inverse of  푥\n2\n+푥+1mod  푥\n8\n+푥\n4\n+\n푥\n3\n+푥=1",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 60
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_60.png?alt=media&token=54bbe21c-5a22-4e95-a972-3e63bd249f8c"
+    },
+    {
+      "pageNumber": 61,
+      "content": "Exercise\nLet’s consider the set of all polynomials whose coefficients belong to \nthe finite field 푍\n7\n(which is the same as GF (7)).\n푓(푥)=5푥\n2\n+4푥+6\n푔(푥)=2푥+1\n푓(푥)+푔(푥)=\n푓푥−푔푥=\n푓(푥)×푔푥=",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 61
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_61.png?alt=media&token=e8397774-8e45-42e2-9ac9-c8fe4ae36967"
+    },
+    {
+      "pageNumber": 62,
+      "content": "Exercise\nQ. Inverse of 95 in GF(2\n8\n).",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 62
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_62.png?alt=media&token=bf92c206-22c8-4988-ac47-5d8735683452"
+    },
+    {
+      "pageNumber": 63,
+      "content": "Reference\n•Cryptography and Network Security-Principles and Practice, 8th \nEdition, by Stallings William, published by Pearson, 2020\n•Cryptography and Network Security, 3rd Edition, by Behrouz A \nForouzanand DepdeepMukhopadhyay, published by McGrawHill, \n2015\n•Cryptography and Network Security, 3rd edition, by Atul Kahate, \npublished by McGrawHill, 2017",
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/42.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "PowerPoint Presentation",
+            "Author": "Sunilkumar 20144",
+            "Creator": "Microsoft® PowerPoint® for Microsoft 365",
+            "Producer": "Microsoft® PowerPoint® for Microsoft 365",
+            "CreationDate": "D:20240205092018+05'30'",
+            "ModDate": "D:20240205092018+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® PowerPoint® for Microsoft 365",
+              "dc:title": "PowerPoint Presentation",
+              "dc:creator": "Sunilkumar 20144",
+              "xmp:creatortool": "Microsoft® PowerPoint® for Microsoft 365",
+              "xmp:createdate": "2024-02-05T09:20:18+05:30",
+              "xmp:modifydate": "2024-02-05T09:20:18+05:30",
+              "xmpmm:documentid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A",
+              "xmpmm:instanceid": "uuid:A966EB6D-F0F2-46AA-ACF6-5F2FF92BCC6A"
+            }
+          },
+          "totalPages": 63
+        },
+        "loc": {
+          "pageNumber": 63
+        }
+      },
+      "firebaseUrl": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F42%2Fpage_63.png?alt=media&token=050325c9-0f54-433c-bfee-e7e8b6e40ebe"
+    }
+  ],
+  "processedDate": "2025-03-18T16:56:26.347Z"
+}

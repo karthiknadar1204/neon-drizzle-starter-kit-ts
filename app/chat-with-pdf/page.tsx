@@ -5,13 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Upload, FileText, Calendar } from "lucide-react";
-import { UploadDropzone } from "@/utils/uploadthing";
+import { FirebasePdfUploader } from "@/components/firebase-pdf-uploader";
 import { useUser } from "@clerk/nextjs";
 import { saveDocument } from "@/actions/document";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import { processPDF } from "@/actions/pdf-processor";
 
 export default function ChatWithPDF() {
   const [isUploading, setIsUploading] = useState(false);
@@ -127,37 +126,25 @@ export default function ChatWithPDF() {
             />
           </div>
           
-          <div className="flex flex-col items-center justify-center border-2 border-dashed rounded-lg p-6 h-40">
-            {isUploading ? (
-              <div className="flex flex-col items-center">
-                <Upload className="h-10 w-10 text-muted-foreground animate-pulse mb-2" />
-                <p className="text-sm text-muted-foreground">Uploading...</p>
-              </div>
-            ) : (
-              <UploadDropzone
-                endpoint="pdfUploader"
-                onUploadBegin={() => {
-                  setIsUploading(true);
-                }}
-                onClientUploadComplete={async (res) => {
-                  setIsUploading(false);
-                  if (res && res[0]) {
-                    console.log("Upload completed:", res[0]);
-                    // Automatically handle the upload and redirect
-                    await handleUpload(res[0]);
-                  }
-                }}
-                onUploadError={(error) => {
-                  setIsUploading(false);
-                  console.error("Upload error:", error.message);
-                  toast({
-                    title: "Upload Error",
-                    description: error.message,
-                    variant: "destructive",
-                  });
-                }}
-              />
-            )}
+          <div className="flex flex-col items-center justify-center border-2 border-dashed rounded-lg p-6">
+            <FirebasePdfUploader
+              onUploadBegin={() => {
+                setIsUploading(true);
+              }}
+              onUploadComplete={(result) => {
+                setIsUploading(false);
+                handleUpload(result);
+              }}
+              onUploadError={(error) => {
+                setIsUploading(false);
+                console.error("Upload error:", error.message);
+                toast({
+                  title: "Upload Error",
+                  description: error.message,
+                  variant: "destructive",
+                });
+              }}
+            />
           </div>
           
           <p className="text-sm text-muted-foreground mt-4 text-center">

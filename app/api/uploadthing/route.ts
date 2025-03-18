@@ -1,7 +1,9 @@
-import { createRouteHandler } from "uploadthing/next";
-import { ourFileRouter } from "./core";
+import { NextResponse } from "next/server";
 
+export async function GET() {
+  return NextResponse.json({ message: "UploadThing API is deprecated. Use Firebase Storage directly." }, { status: 410 });
+}
 
-export const { GET, POST } = createRouteHandler({
-  router: ourFileRouter,
-}); 
+export async function POST() {
+  return NextResponse.json({ message: "UploadThing API is deprecated. Use Firebase Storage directly." }, { status: 410 });
+} 
