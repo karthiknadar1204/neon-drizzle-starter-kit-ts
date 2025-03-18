@@ -1,12 +1,14 @@
 'use server'
 
 import { db } from '@/configs/db';
-import { documents, users } from '@/configs/schema';
+import { documents, users, pdfImages } from '@/configs/schema';
 import { eq } from 'drizzle-orm';
 import { revalidatePath } from 'next/cache';
 import fs from 'fs/promises';
 import path from 'path';
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
+import { storage } from '@/configs/firebase';
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 
 type DocumentData = {
   userId: string; 
@@ -17,8 +19,89 @@ type DocumentData = {
   fileSize: number;
 };
 
-export async function saveDocument(documentData: DocumentData) {
+// Helper function to upload an image to Firebase Storage with retry logic
+async function uploadImageToFirebase(imageBuffer: Buffer, documentId: number, pageNumber: number, maxRetries = 3): Promise<string> {
+  const imageName = `page_${pageNumber}.png`;
+  const storageRef = ref(storage, `documents/${documentId}/${imageName}`);
+  
+  // Convert Buffer to Blob for Firebase
+  const blob = new Blob([imageBuffer], { type: 'image/png' });
+  
+  // Retry logic
+  let attempt = 0;
+  let lastError;
+  
+  while (attempt < maxRetries) {
+    try {
+      // Upload the image
+      await uploadBytes(storageRef, blob);
+      
+      // Get the download URL
+      const downloadUrl = await getDownloadURL(storageRef);
+      return downloadUrl;
+    } catch (error) {
+      lastError = error;
+      attempt++;
+      console.log(`Upload attempt ${attempt} failed for page ${pageNumber}, retrying...`);
+      // Wait before retrying (exponential backoff)
+      await new Promise(resolve => setTimeout(resolve, 1000 * (2 ** attempt)));
+    }
+  }
+  
+  console.error(`All ${maxRetries} upload attempts failed for page ${pageNumber}`);
+  throw lastError;
+}
+
+// Process and upload images for a single PDF page
+async function processPage(pdfBuffer: Buffer, documentId: number, pageNumber: number, imagesDir: string): Promise<{pageNumber: number, firebaseUrl: string}> {
   try {
+    // Convert single page with minimized settings
+    const pdf2img = await import("pdf-img-convert");
+    const imageOptions = {
+      width: 1000,         // Further reduced for speed
+      height: 1000,        // Further reduced for speed
+      scale: 1.2,          // Reduced scale for faster processing
+      base64: false, 
+      density: 150,        // Lower density for faster processing
+      outputFormat: "png",
+      page: pageNumber     // Process only this specific page
+    };
+    
+    const [imageBuffer] = await pdf2img.convert(pdfBuffer, imageOptions);
+    
+    // Save locally
+    const imagePath = path.join(imagesDir, `page_${pageNumber}.png`);
+    await fs.writeFile(imagePath, imageBuffer);
+    
+    // Upload to Firebase with retries
+    const firebaseUrl = await uploadImageToFirebase(imageBuffer, documentId, pageNumber);
+    
+    // Save to database
+    await db.insert(pdfImages).values({
+      documentId: documentId,
+      pageNumber: pageNumber,
+      imageUrl: firebaseUrl,
+      imageKey: `documents/${documentId}/page_${pageNumber}.png`,
+      uploadedAt: new Date(),
+      metadata: {}
+    });
+    
+    return {
+      pageNumber,
+      firebaseUrl
+    };
+  } catch (error) {
+    console.error(`Error processing page ${pageNumber}:`, error);
+    throw error;
+  }
+}
+
+// Main function to save document and initiate background processing
+export async function saveDocument(documentData: DocumentData) {
+  console.log("=== DOCUMENT SAVE PROCESS STARTED ===");
+  
+  try {
+    // Find user
     const user = await db.query.users.findFirst({
       where: eq(users.clerkId, documentData.userId),
     });
@@ -27,7 +110,7 @@ export async function saveDocument(documentData: DocumentData) {
       return { success: false, message: "User not found" };
     }
 
-    // Insert the document and get the ID using returning()
+    // Insert document and get ID
     const result = await db.insert(documents)
       .values({
         userId: user.id,
@@ -39,100 +122,90 @@ export async function saveDocument(documentData: DocumentData) {
       })
       .returning({ id: documents.id });
     
-    console.log("Insert result with returning:", result);
-    
-    // Get the document ID from the result
     const documentId = result[0]?.id;
-    console.log("Document ID from returning:", documentId);
     
-    // Process the PDF after saving the document
-    if (documentId) {
+    if (!documentId) {
+      return { success: false, message: "Failed to get document ID" };
+    }
+    
+    // Return early with success status
+    revalidatePath('/chat-with-pdf');
+    
+    // Start processing in a non-blocking way
+    (async () => {
       try {
-        console.log("Starting PDF processing for document:", documentId);
-        
-        // Create a temporary file path for the PDF
-        const tempDir = path.join(process.cwd(), 'temp');
-        
-        // Ensure the temp directory exists
-        try {
-          await fs.mkdir(tempDir, { recursive: true });
-        } catch (error) {
-          console.log("Temp directory already exists or couldn't be created");
-        }
-        
-        // Download the PDF from the URL
+        // Download the PDF
         const response = await fetch(documentData.fileUrl);
         if (!response.ok) {
           throw new Error(`Failed to fetch PDF: ${response.statusText}`);
         }
         
-        const pdfBuffer = await response.arrayBuffer();
+        const pdfBuffer = Buffer.from(await response.arrayBuffer());
+        
+        // Create necessary directories
+        const tempDir = path.join(process.cwd(), 'temp');
+        const imagesDir = path.join(process.cwd(), 'data', 'images', documentId.toString());
+        const dataDir = path.join(process.cwd(), 'data');
+        
+        await Promise.all([
+          fs.mkdir(tempDir, { recursive: true }),
+          fs.mkdir(imagesDir, { recursive: true }),
+          fs.mkdir(dataDir, { recursive: true })
+        ]);
+        
+        // Save PDF to temp file for PDFLoader
         const tempFilePath = path.join(tempDir, `${documentId}.pdf`);
+        await fs.writeFile(tempFilePath, pdfBuffer);
         
-        // Write the PDF to a temporary file
-        await fs.writeFile(tempFilePath, Buffer.from(pdfBuffer));
-        
-        // Use PDFLoader to load and process the PDF
+        // Extract text content with PDFLoader
         const loader = new PDFLoader(tempFilePath, {
           parsedItemSeparator: "",
         });
         
         const docs = await loader.load();
-        
-        // Count the number of pages
         const pageCount = docs.length;
         
-        // Create images directory for this document
-        const imagesDir = path.join(process.cwd(), 'data', 'images', documentId.toString());
-        try {
-          await fs.mkdir(imagesDir, { recursive: true });
-        } catch (error) {
-          console.log("Images directory already exists or couldn't be created");
+        // Process pages in smaller batches with limited concurrency
+        const batchSize = 2; // Process only 2 pages at a time
+        const imageReferences = [];
+        
+        for (let i = 0; i < pageCount; i += batchSize) {
+          const batch = Array.from({ length: Math.min(batchSize, pageCount - i) }, (_, idx) => i + idx + 1);
+          
+          // Process this batch of pages concurrently
+          const batchResults = await Promise.allSettled(
+            batch.map(pageNumber => processPage(pdfBuffer, documentId, pageNumber, imagesDir))
+          );
+          
+          // Add successful results to our references array
+          batchResults.forEach((result, idx) => {
+            if (result.status === 'fulfilled') {
+              imageReferences.push(result.value);
+            } else {
+              console.error(`Failed to process page ${batch[idx]}:`, result.reason);
+            }
+          });
+          
+          // Add a delay between batches to prevent timeouts
+          if (i + batchSize < pageCount) {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
         }
         
-        // Extract images from PDF pages with increased size limit
-        const pdf2img = await import("pdf-img-convert");
-        const pdfImages = await pdf2img.convert(tempFilePath, {
-          // Set higher resolution and quality options
-          width: 2000,         // Increased width
-          height: 2000,        // Increased height
-          scale: 2.0,          // Higher scale factor
-          base64: false,       // We want binary data, not base64
-          density: 300,        // Higher DPI
-          outputFormat: "png", // Use PNG format
-          page: null           // Convert all pages
-        });
-        
-        // Save images and create references
-        const imageReferences = await Promise.all(pdfImages.map(async (imageBuffer, index) => {
-          const imagePath = path.join(imagesDir, `page_${index + 1}.png`);
-          const relativeImagePath = path.relative(process.cwd(), imagePath);
-          
-          await fs.writeFile(imagePath, imageBuffer);
+        // Create page-wise content references
+        const pagesContent = docs.map((doc, index) => {
+          const pageNumber = index + 1;
+          const imageRef = imageReferences.find(img => img.pageNumber === pageNumber);
           
           return {
-            pageNumber: index + 1,
-            imagePath: relativeImagePath
+            pageNumber,
+            content: doc.pageContent,
+            metadata: doc.metadata,
+            firebaseUrl: imageRef?.firebaseUrl || null
           };
-        }));
+        });
         
-        // Extract page-wise content
-        const pagesContent = docs.map((doc, index) => ({
-          pageNumber: index + 1,
-          content: doc.pageContent,
-          metadata: doc.metadata,
-          image: imageReferences.find(img => img.pageNumber === index + 1)?.imagePath || null
-        }));
-        
-        // Create a data directory if it doesn't exist
-        const dataDir = path.join(process.cwd(), 'data');
-        try {
-          await fs.mkdir(dataDir, { recursive: true });
-        } catch (error) {
-          console.log("Data directory already exists or couldn't be created");
-        }
-        
-        // Save the page-wise content to a JSON file
+        // Save as JSON
         const jsonFilePath = path.join(dataDir, `${documentId}.json`);
         await fs.writeFile(
           jsonFilePath, 
@@ -140,30 +213,55 @@ export async function saveDocument(documentData: DocumentData) {
             documentId,
             pageCount,
             pages: pagesContent,
-            images: imageReferences
+            processedDate: new Date().toISOString()
           }, null, 2)
         );
         
-        // Clean up the temporary file
+        // Save just the Firebase image URLs to a separate JSON file
+        const firebaseImagesFilePath = path.join(dataDir, `${documentId}_firebase_images.json`);
+        await fs.writeFile(
+          firebaseImagesFilePath,
+          JSON.stringify({
+            documentId,
+            pageCount,
+            images: imageReferences.map(img => ({
+              pageNumber: img.pageNumber,
+              firebaseUrl: img.firebaseUrl
+            }))
+          }, null, 2)
+        );
+        
+        // Clean up temp file
         await fs.unlink(tempFilePath);
         
-        console.log(`PDF processed successfully. Page count: ${pageCount}, Images extracted: ${imageReferences.length}`);
-      } catch (processingError) {
-        console.error("Error processing PDF:", processingError);
-        // We don't want to fail the document save if processing fails
+        // Update document's updatedAt timestamp to indicate processing is complete
+        await db.update(documents)
+          .set({ 
+            updatedAt: new Date()
+          })
+          .where(eq(documents.id, documentId));
+          
+      } catch (error) {
+        console.error("=== ERROR PROCESSING PDF ===", error);
+        
+        // Just update the timestamp to indicate something happened
+        await db.update(documents)
+          .set({ 
+            updatedAt: new Date()
+          })
+          .where(eq(documents.id, documentId));
       }
-    } else {
-      console.error("Document ID is undefined, cannot process PDF");
-    }
+    })();
     
-    revalidatePath('/chat-with-pdf');
+    // Return success immediately
     return { 
       success: true, 
-      message: "Document saved successfully",
+      message: "Document saved successfully. Processing started in background.",
       documentId
     };
+    
   } catch (error) {
-    console.error("Error saving document:", error);
+    console.error("=== ERROR SAVING DOCUMENT ===", error);
     return { success: false, message: "Failed to save document" };
   }
-} 
+}
