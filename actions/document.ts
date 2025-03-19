@@ -1,7 +1,7 @@
 'use server'
 
 import { db } from '@/configs/db';
-import { documents, users } from '@/configs/schema';
+import { documents, users, pdfPages } from '@/configs/schema';
 import { eq } from 'drizzle-orm';
 import { revalidatePath } from 'next/cache';
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
@@ -10,6 +10,7 @@ import path from 'path';
 import { storage } from '@/configs/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { processDocumentEmbeddings } from '@/lib/embeddings';
 
 type DocumentData = {
   userId: string; 
@@ -151,10 +152,15 @@ export async function saveDocument(documentData: DocumentData) {
             // Add to image references
             imageReferences.push({
               pageNumber,
-              firebaseUrl
+              firebaseUrl,
+              imageKey: "", // Assuming imageKey is empty for now
+              metadata: null
             });
           }
         }
+        
+        // Save all images in a single record
+        await savePdfPageImages(documentId, imageReferences);
         
         // Combine page content with image references
         const combinedData = {
@@ -190,7 +196,16 @@ export async function saveDocument(documentData: DocumentData) {
           .where(eq(documents.id, documentId));
           
         console.log(`Document ${documentId} processing completed successfully`);
-          
+        
+        // Process document embeddings
+        try {
+          await processDocumentEmbeddings(documentId);
+          console.log(`Generated and stored embeddings for document ${documentId}`);
+        } catch (embeddingError) {
+          console.error("Error processing embeddings:", embeddingError);
+          // Continue with the process even if embeddings fail
+        }
+        
       } catch (error) {
         console.error("=== ERROR PROCESSING PDF ===", error);
         
@@ -214,4 +229,47 @@ export async function saveDocument(documentData: DocumentData) {
     console.error("=== ERROR SAVING DOCUMENT ===", error);
     return { success: false, message: "Failed to save document" };
   }
+}
+
+// Function to save PDF page images to the database
+async function savePdfPageImages(documentId: number, imageReferences: Array<{
+  pageNumber: number,
+  firebaseUrl: string,
+  imageKey: string,
+  metadata?: any
+}>) {
+  // Format the images array for storage
+  const imagesData = imageReferences.map(img => ({
+    pageNumber: img.pageNumber,
+    imageUrl: img.firebaseUrl,
+    imageKey: img.imageKey || `documents/${documentId}/page_${img.pageNumber}.png`,
+    metadata: img.metadata || null,
+    uploadedAt: new Date()
+  }));
+
+  // Check if a record already exists for this document
+  const existingRecord = await db.query.pdfPages.findFirst({
+    where: eq(pdfPages.documentId, documentId)
+  });
+
+  if (existingRecord) {
+    // Update existing record
+    await db.update(pdfPages)
+      .set({ 
+        images: imagesData,
+        updatedAt: new Date()
+      })
+      .where(eq(pdfPages.documentId, documentId));
+  } else {
+    // Create new record
+    await db.insert(pdfPages)
+      .values({
+        documentId,
+        images: imagesData,
+        uploadedAt: new Date(),
+        updatedAt: new Date()
+      });
+  }
+  
+  return imagesData;
 }

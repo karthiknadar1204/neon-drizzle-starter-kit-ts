@@ -1,0 +1,1059 @@
+{
+  "documentId": 85,
+  "pageCount": 27,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "content": "PROGRAMMING OF DATA SCIENCE  \nTHEORY DA  \nANKUR ROHILLA  \n21BDS0311 \nDomain 1: Time Series Analysis \n1. Popular Packages for Time Series Analysis \nTime series analysis involves working with time-ordered data to identify trends, seasonality, and \ncyclical patterns. Several R packages help in analyzing and modeling time series data. Here are seven \nwidely used ones: \n1. forecast \nThe forecast package is widely used for time series forecasting. It provides functions to fit models like \nARIMA, ETS, and others. It helps in automatic model selection and producing accurate predictions. \nR Code: ",
+      "chunks": [
+        "PROGRAMMING OF DATA SCIENCE  \nTHEORY DA  \nANKUR ROHILLA  \n21BDS0311 \nDomain 1: Time Series Analysis \n1. Popular Packages for Time Series Analysis \nTime series analysis involves working with time-ordered data to identify trends, seasonality, and \ncyclical patterns. Several R packages help in analyzing and modeling time series data. Here are seven \nwidely used ones: \n1. forecast \nThe forecast package is widely used for time series forecasting. It provides functions to fit models like \nARIMA, ETS, and others. It helps in automatic model selection and producing accurate predictions. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 1
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_1.png?alt=media&token=6e70c654-0eb5-4d26-8876-32488447269a"
+    },
+    {
+      "pageNumber": 2,
+      "content": " \n \n \n2. tseries \nThe tseries package provides tools for time series analysis, including unit root tests, spectral analysis, \nand GARCH models. \nR Code: \n \n3. zoo \nThe zoo package provides an efficient way to handle irregular time series data. It allows indexing with \ndates and smooth handling of missing values. \nR Code:  ",
+      "chunks": [
+        "2. tseries \nThe tseries package provides tools for time series analysis, including unit root tests, spectral analysis, \nand GARCH models. \nR Code: \n \n3. zoo \nThe zoo package provides an efficient way to handle irregular time series data. It allows indexing with \ndates and smooth handling of missing values. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 2
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_2.png?alt=media&token=8d9ca096-d4be-460e-8fab-4ac092639a25"
+    },
+    {
+      "pageNumber": 3,
+      "content": " \n \n4. xts ",
+      "chunks": [
+        "4. xts"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 3
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_3.png?alt=media&token=412c9387-43d2-4c4b-9509-6a552381c736"
+    },
+    {
+      "pageNumber": 4,
+      "content": "The xts package extends zoo and is commonly used in financial time series analysis. \nR Code: \n \n \n \n5. tsibble \nThe tsibble package is designed for tidy time series analysis, making it easy to handle indexed data. \nR Code: ",
+      "chunks": [
+        "The xts package extends zoo and is commonly used in financial time series analysis. \nR Code: \n \n \n \n5. tsibble \nThe tsibble package is designed for tidy time series analysis, making it easy to handle indexed data. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 4
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_4.png?alt=media&token=cc94f078-4b1c-4625-8523-58edc66db035"
+    },
+    {
+      "pageNumber": 5,
+      "content": " \n6. prophet \nThe prophet package is developed by Facebook and is useful for automatic time series forecasting \nwith trend and seasonality components. \nR Code: ",
+      "chunks": [
+        "6. prophet \nThe prophet package is developed by Facebook and is useful for automatic time series forecasting \nwith trend and seasonality components. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 5
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_5.png?alt=media&token=0438a853-8535-4a5c-9927-d8283ee73366"
+    },
+    {
+      "pageNumber": 6,
+      "content": " \n \n7. lubridate \nThe lubridate package simplifies handling and manipulation of date and time variables. \nR Code: ",
+      "chunks": [
+        "7. lubridate \nThe lubridate package simplifies handling and manipulation of date and time variables. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 6
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_6.png?alt=media&token=f049cc21-9a11-4399-8195-93346305add8"
+    },
+    {
+      "pageNumber": 7,
+      "content": " \n \n \n2. Functions for Constructing and Plotting Time Series \nTime series construction and visualization are crucial steps in understanding trends and seasonality. \nVarious R functions can be used for these tasks. \n1. Constructing a Time Series \nThe ts() function is the base R function for creating time series objects. It requires: \n• A numeric vector of values. \n• The starting time (e.g., year and month for monthly data). \n• The frequency (e.g., 12 for monthly data, 4 for quarterly data). \nR Code: \n ",
+      "chunks": [
+        "2. Functions for Constructing and Plotting Time Series \nTime series construction and visualization are crucial steps in understanding trends and seasonality. \nVarious R functions can be used for these tasks. \n1. Constructing a Time Series \nThe ts() function is the base R function for creating time series objects. It requires: \n• A numeric vector of values. \n• The starting time (e.g., year and month for monthly data). \n• The frequency (e.g., 12 for monthly data, 4 for quarterly data). \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 7
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_7.png?alt=media&token=82f21bb9-bd14-4287-ac78-c4ed4d207ddb"
+    },
+    {
+      "pageNumber": 8,
+      "content": "2. Plotting a Time Series \nVisualizing time series data helps in identifying trends and seasonal patterns. \na) Using Base R plot() Function \nThe simplest way to visualize a time series is using the base R plot() function. \nR Code: \n \n \nb) Using ggplot2 for Enhanced Visualization \nThe ggplot2 package allows customized time series plotting. \nR Code: ",
+      "chunks": [
+        "2. Plotting a Time Series \nVisualizing time series data helps in identifying trends and seasonal patterns. \na) Using Base R plot() Function \nThe simplest way to visualize a time series is using the base R plot() function. \nR Code: \n \n \nb) Using ggplot2 for Enhanced Visualization \nThe ggplot2 package allows customized time series plotting. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 8
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_8.png?alt=media&token=4c338a35-8021-407e-9cd1-8bbb468ae2a9"
+    },
+    {
+      "pageNumber": 9,
+      "content": " \n \nc) Using forecast Package for Seasonality Plot \nThe forecast package provides additional tools for decomposition and seasonality visualization. \nR Code:  ",
+      "chunks": [
+        "c) Using forecast Package for Seasonality Plot \nThe forecast package provides additional tools for decomposition and seasonality visualization. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 9
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_9.png?alt=media&token=8437f038-fa88-4414-8855-62566b99defd"
+    },
+    {
+      "pageNumber": 10,
+      "content": " \n \nThis allows comparison of different months across years, helping to identify repeating seasonal \npatterns. \n3)Functions for Decomposing Time Series \nTime series decomposition involves breaking a time series into its components: \n• Trend: The long-term progression of the series. \n• Seasonal: Regular, repeating patterns over time. \n• Residual (Random Component): Irregular fluctuations that are not explained by trend or \nseasonality. \n1. Decomposing Using decompose() \nThe base R function decompose() breaks down a time series into these components. \nR Code: \n \n \n2. Decomposing Using stl() for Seasonal and Trend Components \nThe stl() function provides a more flexible decomposition using LOESS (Local Regression). \nR Code: ",
+      "chunks": [
+        "This allows comparison of different months across years, helping to identify repeating seasonal \npatterns. \n3)Functions for Decomposing Time Series \nTime series decomposition involves breaking a time series into its components: \n• Trend: The long-term progression of the series. \n• Seasonal: Regular, repeating patterns over time. \n• Residual (Random Component): Irregular fluctuations that are not explained by trend or \nseasonality. \n1. Decomposing Using decompose() \nThe base R function decompose() breaks down a time series into these components. \nR Code: \n \n \n2. Decomposing Using stl() for Seasonal and Trend Components \nThe stl() function provides a more flexible decomposition using LOESS (Local Regression). \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 10
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_10.png?alt=media&token=8987b86c-8975-4f50-be54-a7239f6d8b08"
+    },
+    {
+      "pageNumber": 11,
+      "content": " \n3. Decomposing Using forecast Package \nThe forecast package provides the mstl() function, which enhances STL decomposition for multiple \nseasonal patterns. \nR Code: ",
+      "chunks": [
+        "3. Decomposing Using forecast Package \nThe forecast package provides the mstl() function, which enhances STL decomposition for multiple \nseasonal patterns. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 11
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_11.png?alt=media&token=ccc3363a-dbee-44c5-81e7-5ca773249748"
+    },
+    {
+      "pageNumber": 12,
+      "content": " \n \n4. Checking Residuals After Decomposition \nAfter decomposition, it's important to check if the residuals are random (white noise), ensuring that \nthe trend and seasonal components were correctly extracted. \nR Code: ",
+      "chunks": [
+        "4. Checking Residuals After Decomposition \nAfter decomposition, it's important to check if the residuals are random (white noise), ensuring that \nthe trend and seasonal components were correctly extracted. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 12
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_12.png?alt=media&token=6b676848-eb51-4afa-b1f6-1aaf72cdb412"
+    },
+    {
+      "pageNumber": 13,
+      "content": " \n \n4)Base Functions for Forecasting Time Series Models \nTime series forecasting involves predicting future values based on historical data. The three most \ncommon forecasting methods in R are: \n1. ARIMA (AutoRegressive Integrated Moving Average) \nARIMA models are widely used for time series forecasting. They combine autoregression (AR), \ndifferencing (I), and moving averages (MA). \nR Code: \n \n \n2. Exponential Smoothing (ETS Model) ",
+      "chunks": [
+        "4)Base Functions for Forecasting Time Series Models \nTime series forecasting involves predicting future values based on historical data. The three most \ncommon forecasting methods in R are: \n1. ARIMA (AutoRegressive Integrated Moving Average) \nARIMA models are widely used for time series forecasting. They combine autoregression (AR), \ndifferencing (I), and moving averages (MA). \nR Code: \n \n \n2. Exponential Smoothing (ETS Model)"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 13
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_13.png?alt=media&token=4da960ec-5da5-4e99-bdfb-90ea9928e473"
+    },
+    {
+      "pageNumber": 14,
+      "content": "The ETS model (Error, Trend, and Seasonality) is an alternative to ARIMA that automatically selects \nthe best-fitting exponential smoothing model. \nR Code: \n \n \n3. Prophet Model \nDeveloped by Facebook, the Prophet model handles trend shifts, seasonality, and holidays. \nR Code: ",
+      "chunks": [
+        "The ETS model (Error, Trend, and Seasonality) is an alternative to ARIMA that automatically selects \nthe best-fitting exponential smoothing model. \nR Code: \n \n \n3. Prophet Model \nDeveloped by Facebook, the Prophet model handles trend shifts, seasonality, and holidays. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 14
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_14.png?alt=media&token=3d0328d2-538d-4168-8092-931db42e3d9c"
+    },
+    {
+      "pageNumber": 15,
+      "content": " \n \n5). Identifying Correlation and Variance in Time Series \nUnderstanding correlation and variance in time series data helps analyze relationships and \nfluctuations in data. \n1. Variance Calculation \nVariance measures the dispersion of the data points. \nR Code: \n \n2. Correlation Between Two Time Series \nCorrelation quantifies the relationship between two time series. \nR Code: ",
+      "chunks": [
+        "5). Identifying Correlation and Variance in Time Series \nUnderstanding correlation and variance in time series data helps analyze relationships and \nfluctuations in data. \n1. Variance Calculation \nVariance measures the dispersion of the data points. \nR Code: \n \n2. Correlation Between Two Time Series \nCorrelation quantifies the relationship between two time series. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 15
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_15.png?alt=media&token=98c5d37d-5e07-4a47-a516-f76952774d36"
+    },
+    {
+      "pageNumber": 16,
+      "content": " \nA correlation close to 1 or -1 indicates a strong relationship, while a value near 0 suggests weak or no \ncorrelation. \n \nDomain 2: Social Network Analysis and Mining \n1. Popular Packages for Social Network Analysis \nSocial Network Analysis (SNA) is a methodological approach used to study relationships between \nentities such as individuals, organizations, or systems. It helps in understanding connectivity, \ninfluence, community formation, and information flow. In R, multiple packages provide \nfunctionalities for network creation, visualization, and statistical analysis. \nBelow are seven of the most commonly used R packages for SNA: \n1. igraph \nThe igraph package is one of the most powerful and widely used packages for network analysis. It \nallows users to create, manipulate, visualize, and analyze complex networks efficiently. It includes \nfunctions for network clustering, shortest paths, and centrality measures. \nR Code: ",
+      "chunks": [
+        "A correlation close to 1 or -1 indicates a strong relationship, while a value near 0 suggests weak or no \ncorrelation. \n \nDomain 2: Social Network Analysis and Mining \n1. Popular Packages for Social Network Analysis \nSocial Network Analysis (SNA) is a methodological approach used to study relationships between \nentities such as individuals, organizations, or systems. It helps in understanding connectivity, \ninfluence, community formation, and information flow. In R, multiple packages provide \nfunctionalities for network creation, visualization, and statistical analysis. \nBelow are seven of the most commonly used R packages for SNA: \n1. igraph \nThe igraph package is one of the most powerful and widely used packages for network analysis. It \nallows users to create, manipulate, visualize, and analyze complex networks efficiently. It includes \nfunctions for network clustering, shortest paths, and centrality measures. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 16
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_16.png?alt=media&token=b4a4d2e4-b884-4fd3-b524-2ad1faadbebe"
+    },
+    {
+      "pageNumber": 17,
+      "content": " \n \n2. ggraph \nThe ggraph package is an extension of ggplot2 designed for network visualization. It provides various \nlayout algorithms, edge bundling techniques, and customizable aesthetics to produce high-quality \nnetwork plots. \nR Code: \n ",
+      "chunks": [
+        "2. ggraph \nThe ggraph package is an extension of ggplot2 designed for network visualization. It provides various \nlayout algorithms, edge bundling techniques, and customizable aesthetics to produce high-quality \nnetwork plots. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 17
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_17.png?alt=media&token=43981ccc-abcc-40df-9f2f-40ad4df8769d"
+    },
+    {
+      "pageNumber": 18,
+      "content": " \n \n3. sna \nThe sna package (Social Network Analysis) includes a variety of functions for analyzing network \nstructures, including centrality measures, clustering algorithms, and structural equivalence tests. It is \nparticularly useful for understanding the importance of nodes and edges within a network. \nR Code: \n ",
+      "chunks": [
+        "3. sna \nThe sna package (Social Network Analysis) includes a variety of functions for analyzing network \nstructures, including centrality measures, clustering algorithms, and structural equivalence tests. It is \nparticularly useful for understanding the importance of nodes and edges within a network. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 18
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_18.png?alt=media&token=00a5d9fb-6646-4d21-981d-e727ac67d82c"
+    },
+    {
+      "pageNumber": 19,
+      "content": "4. network \nThe network package allows for the creation, storage, and visualization of network objects in R. \nUnlike igraph, which represents networks as graphs, network uses adjacency matrices and edge lists. \nR Code: \n \n5. visNetwork \nThe visNetwork package is used for interactive network visualization. It provides dynamic plots \nwhere users can zoom, drag, and interact with nodes and edges. It is useful for web-based \napplications. \nR Code: ",
+      "chunks": [
+        "4. network \nThe network package allows for the creation, storage, and visualization of network objects in R. \nUnlike igraph, which represents networks as graphs, network uses adjacency matrices and edge lists. \nR Code: \n \n5. visNetwork \nThe visNetwork package is used for interactive network visualization. It provides dynamic plots \nwhere users can zoom, drag, and interact with nodes and edges. It is useful for web-based \napplications. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 19
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_19.png?alt=media&token=ab83425b-622d-41b8-9275-4b82ca4df0c1"
+    },
+    {
+      "pageNumber": 20,
+      "content": " \n \n6. statnet \nThe statnet package provides a suite of functions for statistical modeling of networks, particularly \nuseful in social sciences. It includes methods for network regression, exponential random graph \nmodels (ERGMs), and dynamic network analysis. \nR Code: \n ",
+      "chunks": [
+        "6. statnet \nThe statnet package provides a suite of functions for statistical modeling of networks, particularly \nuseful in social sciences. It includes methods for network regression, exponential random graph \nmodels (ERGMs), and dynamic network analysis. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 20
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_20.png?alt=media&token=84c93d8e-beb6-4545-a805-2498cdcb6d5e"
+    },
+    {
+      "pageNumber": 21,
+      "content": "7. tidygraph \nThe tidygraph package integrates network analysis with the tidyverse framework, making it easier to \nmanipulate graph data using dplyr and tidyr. It is particularly useful for users familiar with ggplot2 \nand dplyr. \nR Code: \n \n \n \n2)Functions for Network Graph Construction and Plotting \nNetwork graphs are used to represent relationships between nodes (entities) and edges \n(connections). Constructing and plotting a network graph involves defining nodes and edges, setting \nthe graph layout, and customizing aesthetics. \nDetailed Explanation: \nA network graph consists of: \n• Nodes (Vertices): Represent entities such as individuals, computers, or cities. \n• Edges (Links): Represent connections between nodes. \n• Directed vs. Undirected Graphs: In a directed graph, edges have direction, while in an \nundirected graph, edges have no direction. \n• Weighted Graphs: Each edge has a weight representing the strength of the relationship. \nR Code: ",
+      "chunks": [
+        "7. tidygraph \nThe tidygraph package integrates network analysis with the tidyverse framework, making it easier to \nmanipulate graph data using dplyr and tidyr. It is particularly useful for users familiar with ggplot2 \nand dplyr. \nR Code: \n \n \n \n2)Functions for Network Graph Construction and Plotting \nNetwork graphs are used to represent relationships between nodes (entities) and edges \n(connections). Constructing and plotting a network graph involves defining nodes and edges, setting \nthe graph layout, and customizing aesthetics. \nDetailed Explanation: \nA network graph consists of: \n• Nodes (Vertices): Represent entities such as individuals, computers, or cities. \n• Edges (Links): Represent connections between nodes. \n• Directed vs. Undirected Graphs: In a directed graph, edges have direction, while in an \nundirected graph, edges have no direction. \n• Weighted Graphs: Each edge has a weight representing the strength of the relationship. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 21
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_21.png?alt=media&token=1c88a38a-1dce-44de-b8ff-79945cba134d"
+    },
+    {
+      "pageNumber": 22,
+      "content": " \n \n3. Neighbor Nodes \nNeighbor nodes are directly connected to a given node. Identifying neighbors is useful for analyzing \ninfluence and connectivity in networks. \nDetailed Explanation: \n• Degree of a Node: Number of edges connected to a node. \n• In-Degree and Out-Degree (Directed Graphs): In-degree represents incoming connections, \nwhile out-degree represents outgoing connections. \n• Finding Neighbors: Used to identify direct connections in social networks or communication \nnetworks. \nR Code: ",
+      "chunks": [
+        "3. Neighbor Nodes \nNeighbor nodes are directly connected to a given node. Identifying neighbors is useful for analyzing \ninfluence and connectivity in networks. \nDetailed Explanation: \n• Degree of a Node: Number of edges connected to a node. \n• In-Degree and Out-Degree (Directed Graphs): In-degree represents incoming connections, \nwhile out-degree represents outgoing connections. \n• Finding Neighbors: Used to identify direct connections in social networks or communication \nnetworks. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 22
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_22.png?alt=media&token=016f73fe-4a22-402e-9dc5-d8a48ae9b6f9"
+    },
+    {
+      "pageNumber": 23,
+      "content": " \n4. Clusters \nClusters refer to groups of tightly connected nodes. Clustering helps in detecting communities within \na network. \nDetailed Explanation: \n• Connected Components: Identify subgraphs where all nodes are connected. \n• Cluster Coefficient: Measures how well neighbors of a node are connected to each other. \n• Applications: Useful in social networks (friend groups) and biological networks (gene \ninteractions). \nR Code: \n \n5. Cliques \nA clique is a subset of nodes where each node is directly connected to every other node in the \nsubset. Cliques are useful in studying tightly-knit groups. \nDetailed Explanation: \n• Maximum Clique: Largest clique in a network. \n• Applications: Used in social media analysis, fraud detection, and research collaborations. \nR Code: ",
+      "chunks": [
+        "4. Clusters \nClusters refer to groups of tightly connected nodes. Clustering helps in detecting communities within \na network. \nDetailed Explanation: \n• Connected Components: Identify subgraphs where all nodes are connected. \n• Cluster Coefficient: Measures how well neighbors of a node are connected to each other. \n• Applications: Useful in social networks (friend groups) and biological networks (gene \ninteractions). \nR Code: \n \n5. Cliques \nA clique is a subset of nodes where each node is directly connected to every other node in the \nsubset. Cliques are useful in studying tightly-knit groups. \nDetailed Explanation: \n• Maximum Clique: Largest clique in a network. \n• Applications: Used in social media analysis, fraud detection, and research collaborations. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 23
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_23.png?alt=media&token=e6e54b6b-07eb-40e2-ae00-1a5389ed2f84"
+    },
+    {
+      "pageNumber": 24,
+      "content": " \n6. Community Detection \nCommunity detection algorithms identify densely connected subgroups within a network. This is \nuseful for studying relationships in large graphs. \nDetailed Explanation: \n• Modularity: Measures how well a network is divided into communities. \n• Algorithms: Fast Greedy, Louvain, and Walktrap methods. \n• Applications: Detecting political groups, online communities, and recommendation systems. \nR Code: ",
+      "chunks": [
+        "6. Community Detection \nCommunity detection algorithms identify densely connected subgroups within a network. This is \nuseful for studying relationships in large graphs. \nDetailed Explanation: \n• Modularity: Measures how well a network is divided into communities. \n• Algorithms: Fast Greedy, Louvain, and Walktrap methods. \n• Applications: Detecting political groups, online communities, and recommendation systems. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 24
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_24.png?alt=media&token=78db670b-8f9f-4be5-97d3-2951bffad17f"
+    },
+    {
+      "pageNumber": 25,
+      "content": " \n \n7. Blocks (Partitioning of Networks) \nBlock modeling partitions a network into distinct groups based on connectivity patterns. \nDetailed Explanation: \n• Block Structure: Groups of nodes with similar connectivity patterns. \n• Applications: Used in sociology and criminology for identifying hidden structures in \nnetworks. \nR Code: ",
+      "chunks": [
+        "7. Blocks (Partitioning of Networks) \nBlock modeling partitions a network into distinct groups based on connectivity patterns. \nDetailed Explanation: \n• Block Structure: Groups of nodes with similar connectivity patterns. \n• Applications: Used in sociology and criminology for identifying hidden structures in \nnetworks. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 25
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_25.png?alt=media&token=c616cfb4-c984-4da8-a4e6-2035812f1b35"
+    },
+    {
+      "pageNumber": 26,
+      "content": " \n \n8. Edges \nEdges represent connections between nodes. Understanding edge properties helps analyze \nrelationship strength and interaction patterns. \nDetailed Explanation: \n• Weighted Edges: Represent stronger or weaker relationships. \n• Directed vs. Undirected Edges: Show one-way or mutual connections. \n• Applications: Used in transportation, social networks, and supply chain networks. \nR Code: \n \n8. Subgraphs \nA subgraph is a smaller section of a network extracted from a larger graph. \nDetailed Explanation: \n• Induced Subgraph: Created using a subset of nodes from the original graph. ",
+      "chunks": [
+        "8. Edges \nEdges represent connections between nodes. Understanding edge properties helps analyze \nrelationship strength and interaction patterns. \nDetailed Explanation: \n• Weighted Edges: Represent stronger or weaker relationships. \n• Directed vs. Undirected Edges: Show one-way or mutual connections. \n• Applications: Used in transportation, social networks, and supply chain networks. \nR Code: \n \n8. Subgraphs \nA subgraph is a smaller section of a network extracted from a larger graph. \nDetailed Explanation: \n• Induced Subgraph: Created using a subset of nodes from the original graph."
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 26
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_26.png?alt=media&token=41a0beaa-3a91-4cb1-a115-e839e3ef7142"
+    },
+    {
+      "pageNumber": 27,
+      "content": "• Applications: Used to analyze sub-communities in large networks. \nR Code: \n \n ",
+      "chunks": [
+        "• Applications: Used to analyze sub-communities in large networks. \nR Code:"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/85.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.7",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Author": "Ankur Rohilla",
+            "Creator": "Microsoft® Word 2021",
+            "Producer": "Microsoft® Word 2021",
+            "CreationDate": "D:20250315225251+05'30'",
+            "ModDate": "D:20250315225251+05'30'"
+          },
+          "metadata": {
+            "_metadata": {
+              "pdf:producer": "Microsoft® Word 2021",
+              "dc:creator": "Ankur Rohilla",
+              "xmp:creatortool": "Microsoft® Word 2021",
+              "xmp:createdate": "2025-03-15T22:52:51+05:30",
+              "xmp:modifydate": "2025-03-15T22:52:51+05:30",
+              "xmpmm:documentid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266",
+              "xmpmm:instanceid": "uuid:544B4FED-38BF-40D3-955F-71D89EC9A266"
+            }
+          },
+          "totalPages": 27
+        },
+        "loc": {
+          "pageNumber": 27
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F85%2Fpage_27.png?alt=media&token=30f2bf49-cfe7-4b15-9e1a-7f5fa081ff00"
+    }
+  ]
+}
