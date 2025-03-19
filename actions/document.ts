@@ -9,6 +9,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { storage } from '@/configs/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 
 type DocumentData = {
   userId: string; 
@@ -87,11 +88,25 @@ export async function saveDocument(documentData: DocumentData) {
         
         console.log(`Document ID: ${documentId}, Page Count: ${pageCount}`);
         
-        // Extract page-wise content
-        const pagesContent = docs.map((doc, index) => ({
-          pageNumber: index + 1,
-          content: doc.pageContent,
-          metadata: doc.metadata
+        // Create text splitter for chunking
+        const textSplitter = new RecursiveCharacterTextSplitter({
+          chunkSize: 1000,
+          chunkOverlap: 200,
+          separators: ["\n\n", "\n", ". ", " ", ""]
+        });
+        
+        // Extract page-wise content with chunks
+        const pagesContent = await Promise.all(docs.map(async (doc, index) => {
+          // Create chunks for this page's content
+          const chunks = await textSplitter.createDocuments([doc.pageContent]);
+          const chunkTexts = chunks.map(chunk => chunk.pageContent);
+          
+          return {
+            pageNumber: index + 1,
+            content: doc.pageContent,
+            chunks: chunkTexts,
+            metadata: doc.metadata
+          };
         }));
         
         // Import pdf-img-convert dynamically

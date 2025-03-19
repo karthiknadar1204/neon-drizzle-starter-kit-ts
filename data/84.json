@@ -1,0 +1,44 @@
+{
+  "documentId": 84,
+  "pageCount": 1,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "content": "KARTHIK NADAR\n+91 9372901773   —   Mumbai, India⋄karthiknadar1204@gmail.com   —   LinkedIn   —   GitHub\nEDUCATION\nBachelor of Computer Science and Engineering\nVellore Institute of Technology2021 - 2025\nFinal Year\nSKILLS\nTechnical SkillsNext.js, React.js, Express.js, Drizzle ORM, Prisma ORM, Firebase, Tailwind CSS, Docker,\nKubernetes,  Jenkins,  GitHub  Actions,  Python,  FastAPI,  Redis,  LangChain,  Pinecone,\nChromaDB, Cloudflare Workers, FFmpeg, MongoDB, PostgreSQL,vercel ai sdk\nCloud TechnologiesAWS (EC2, S3, Route53, EKS, ECS, SNS), Cloudinary, Uploadthing,imagekit\nDevOpsCI/CD  Pipelines  (Jenkins,  GitHub  Actions),  Docker,  Kubernetes,  Cloudflare  Workers,\nMonitoring\nPROJECTS\nPlumAiAI-powered  search  agent  designed  as  an  agentic  Retrieval-Augmented  Generation  (RAG)  system.   Built\nusing  the  Tavily  LLM  Search  API  and  OpenAI  API,  PlumAI  excels  in  delivering  highly  accurate,  context-aware\nsearch results.  By integrating intelligent retrieval and generative capabilities (Try it here)\nformify.An  AI-powered  form  builder  utilizing  Gemini  API  and  OpenAI  API.  Features  include  dynamic  form\ncreation, interactive chart visualization, response export to Excel, and AI-driven insights through chat, streamlining\nresponse analysis and decision-making.  outputs.(Try it here)\nDataSenseiAn AI-powered agentic platform that enables users to conversationally interact with their entire database\nusing natural language.  Designed for end-to-end data querying, insights generation, and dynamic visualization, Data\nSensei leverages LLMs and AI-driven retrieval to provide instant answers, trend analysis, and graphical insights using\nRecharts.(Try it here)\nACHIEVEMENTS\n•Competed in the Bajaj Finserv Health flagship hackathon, finishing in the top 8 out of 22 participants selected\nfrom across the country to compete in Pune.  Developed a text-to-video project as part of this hackathon GitHub\nRepository.\n•Reached the final 10 in the Mozilla Firefox Club hackathon organized by VIT Vellore.  Created Opal, a finance\ntracker that analyzes income and expenses based on frequency and type,  enabling users to manage budgets,\ntrack spending, and visualize data with dynamic charts and graphs:  Live Site and GitHub Repository.\nFREELANCING EXPERIENCE\n•Developed a comprehensive inventory management system for a full-fledged factory, streamlining product track-\ning, stock management, and order fulfillment (ongoing):  Live Site.\n•Built a full-fledged project for a Chartered Accountant, incorporating client management, document handling,\nand secure communication features:  Live Site.\n•Created a furniture showcase website that displays products effectively, enhancing user experience and product\ndiscoverability:  Live Site.\nPUBLICATIONS\n•Published a research paper on detecting sign language using Convolutional Neural Networks (CNNs) under the\nguidance of a professor from Nottingham University.  The paper explores the effectiveness of CNN models in\nrecognizing and interpreting sign language gestures, contributing to advancements in accessible communication\ntechnologies.  (Read the paper here)",
+      "chunks": [
+        "KARTHIK NADAR\n+91 9372901773   —   Mumbai, India⋄karthiknadar1204@gmail.com   —   LinkedIn   —   GitHub\nEDUCATION\nBachelor of Computer Science and Engineering\nVellore Institute of Technology2021 - 2025\nFinal Year\nSKILLS\nTechnical SkillsNext.js, React.js, Express.js, Drizzle ORM, Prisma ORM, Firebase, Tailwind CSS, Docker,\nKubernetes,  Jenkins,  GitHub  Actions,  Python,  FastAPI,  Redis,  LangChain,  Pinecone,\nChromaDB, Cloudflare Workers, FFmpeg, MongoDB, PostgreSQL,vercel ai sdk\nCloud TechnologiesAWS (EC2, S3, Route53, EKS, ECS, SNS), Cloudinary, Uploadthing,imagekit\nDevOpsCI/CD  Pipelines  (Jenkins,  GitHub  Actions),  Docker,  Kubernetes,  Cloudflare  Workers,\nMonitoring\nPROJECTS\nPlumAiAI-powered  search  agent  designed  as  an  agentic  Retrieval-Augmented  Generation  (RAG)  system.   Built\nusing  the  Tavily  LLM  Search  API  and  OpenAI  API,  PlumAI  excels  in  delivering  highly  accurate,  context-aware",
+        "using  the  Tavily  LLM  Search  API  and  OpenAI  API,  PlumAI  excels  in  delivering  highly  accurate,  context-aware\nsearch results.  By integrating intelligent retrieval and generative capabilities (Try it here)\nformify.An  AI-powered  form  builder  utilizing  Gemini  API  and  OpenAI  API.  Features  include  dynamic  form\ncreation, interactive chart visualization, response export to Excel, and AI-driven insights through chat, streamlining\nresponse analysis and decision-making.  outputs.(Try it here)\nDataSenseiAn AI-powered agentic platform that enables users to conversationally interact with their entire database\nusing natural language.  Designed for end-to-end data querying, insights generation, and dynamic visualization, Data\nSensei leverages LLMs and AI-driven retrieval to provide instant answers, trend analysis, and graphical insights using\nRecharts.(Try it here)\nACHIEVEMENTS",
+        "Sensei leverages LLMs and AI-driven retrieval to provide instant answers, trend analysis, and graphical insights using\nRecharts.(Try it here)\nACHIEVEMENTS\n•Competed in the Bajaj Finserv Health flagship hackathon, finishing in the top 8 out of 22 participants selected\nfrom across the country to compete in Pune.  Developed a text-to-video project as part of this hackathon GitHub\nRepository.\n•Reached the final 10 in the Mozilla Firefox Club hackathon organized by VIT Vellore.  Created Opal, a finance\ntracker that analyzes income and expenses based on frequency and type,  enabling users to manage budgets,\ntrack spending, and visualize data with dynamic charts and graphs:  Live Site and GitHub Repository.\nFREELANCING EXPERIENCE\n•Developed a comprehensive inventory management system for a full-fledged factory, streamlining product track-\ning, stock management, and order fulfillment (ongoing):  Live Site.",
+        "•Developed a comprehensive inventory management system for a full-fledged factory, streamlining product track-\ning, stock management, and order fulfillment (ongoing):  Live Site.\n•Built a full-fledged project for a Chartered Accountant, incorporating client management, document handling,\nand secure communication features:  Live Site.\n•Created a furniture showcase website that displays products effectively, enhancing user experience and product\ndiscoverability:  Live Site.\nPUBLICATIONS\n•Published a research paper on detecting sign language using Convolutional Neural Networks (CNNs) under the\nguidance of a professor from Nottingham University.  The paper explores the effectiveness of CNN models in\nrecognizing and interpreting sign language gestures, contributing to advancements in accessible communication\ntechnologies.  (Read the paper here)"
+      ],
+      "metadata": {
+        "source": "/Users/karthiknadar/Desktop/pdfs/neon-drizzle-starter-kit-ts/temp/84.pdf",
+        "pdf": {
+          "version": "1.10.100",
+          "info": {
+            "PDFFormatVersion": "1.5",
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "Title": "",
+            "Author": "",
+            "Subject": "",
+            "Keywords": "",
+            "Creator": "LaTeX with hyperref",
+            "Producer": "pdfTeX-1.40.26",
+            "CreationDate": "D:20250303105726Z",
+            "ModDate": "D:20250303105726Z",
+            "Trapped": {
+              "name": "False"
+            }
+          },
+          "metadata": null,
+          "totalPages": 1
+        },
+        "loc": {
+          "pageNumber": 1
+        }
+      },
+      "image": "https://firebasestorage.googleapis.com/v0/b/pdfstudy-909ca.firebasestorage.app/o/documents%2F84%2Fpage_1.png?alt=media&token=0e9a3e44-1854-4896-9e7d-c21e216bd4f4"
+    }
+  ]
+}
