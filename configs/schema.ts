@@ -23,6 +23,9 @@ export const documents = pgTable('documents', {
   fileUrl: text('file_url').notNull(),
   fileKey: varchar('file_key', { length: 255 }).notNull(),
   fileSize: serial('file_size').notNull(),
+  processingProgress: integer('processing_progress').default(0),
+  processingComplete: boolean('processing_complete').default(false),
+  processingError: text('processing_error'),
   createdAt: timestamp('created_at').defaultNow(),
   updatedAt: timestamp('updated_at').defaultNow(),
 });
