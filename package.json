@@ -2,6 +2,7 @@
   "name": "neon-drizzle-starter-kit-ts",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -52,6 +53,7 @@
     "drizzle-orm": "^0.39.2",
     "embla-carousel-react": "^8.5.2",
     "firebase": "^11.4.0",
+    "fs": "^0.0.1-security",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.475.0",
     "next": "15.1.6",
@@ -77,7 +79,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
+    "@types/node": "^20.17.24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.30.4",
@@ -85,6 +87,7 @@
     "eslint-config-next": "15.1.6",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }

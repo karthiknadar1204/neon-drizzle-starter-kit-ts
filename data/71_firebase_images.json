@@ -1,0 +1,10 @@
+{
+  "documentId": 71,
+  "pageCount": 100,
+  "images": [],
+  "processingStats": {
+    "totalBatches": 5,
+    "successfulBatches": 0,
+    "failedBatches": 5
+  }
+}
