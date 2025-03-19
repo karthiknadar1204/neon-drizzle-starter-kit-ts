@@ -72,6 +72,7 @@
     "uploadthing": "^7.5.2",
     "vaul": "^1.1.2",
     "worker-thread": "^1.1.0",
+    "workerjs": "^0.1.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {
