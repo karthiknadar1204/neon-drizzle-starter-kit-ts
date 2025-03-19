@@ -78,12 +78,21 @@ export async function saveDocument(documentData: DocumentData) {
         const tempFilePath = path.join(tempDir, `${documentId}.pdf`);
         await fs.writeFile(tempFilePath, pdfBuffer);
         
-        // Use PDFLoader to count pages
-        const loader = new PDFLoader(tempFilePath);
+        // Use PDFLoader to extract text content
+        const loader = new PDFLoader(tempFilePath, {
+          parsedItemSeparator: "",
+        });
         const docs = await loader.load();
         const pageCount = docs.length;
         
         console.log(`Document ID: ${documentId}, Page Count: ${pageCount}`);
+        
+        // Extract page-wise content
+        const pagesContent = docs.map((doc, index) => ({
+          pageNumber: index + 1,
+          content: doc.pageContent,
+          metadata: doc.metadata
+        }));
         
         // Import pdf-img-convert dynamically
         const pdf2img = await import("pdf-img-convert");
@@ -132,18 +141,28 @@ export async function saveDocument(documentData: DocumentData) {
           }
         }
         
-        // Save image references to a JSON file
-        const jsonFilePath = path.join(dataDir, `${documentId}_firebase_images.json`);
+        // Combine page content with image references
+        const combinedData = {
+          documentId,
+          pageCount,
+          pages: pagesContent.map(page => {
+            // Find the corresponding image reference
+            const imageRef = imageReferences.find(img => img.pageNumber === page.pageNumber);
+            return {
+              ...page,
+              image: imageRef ? imageRef.firebaseUrl : null
+            };
+          })
+        };
+        
+        // Save combined data to a JSON file
+        const jsonFilePath = path.join(dataDir, `${documentId}.json`);
         await fs.writeFile(
           jsonFilePath,
-          JSON.stringify({
-            documentId,
-            pageCount,
-            images: imageReferences
-          }, null, 2)
+          JSON.stringify(combinedData, null, 2)
         );
         
-        console.log(`Saved image references to ${jsonFilePath}`);
+        console.log(`Saved combined content and image references to ${jsonFilePath}`);
         
         // Clean up temp file
         await fs.unlink(tempFilePath);
