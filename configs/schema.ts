@@ -46,16 +46,3 @@ export const chatMessages = pgTable('chat_messages', {
   createdAt: timestamp('created_at').defaultNow(),
 });
 
-// PDF images table
-export const pdfPages = pgTable('pdf_pages', {
-  id: serial('id').primaryKey(),
-  documentId: integer('document_id').references(() => documents.id, { onDelete: 'cascade' }).unique(),
-  images: jsonb('images').notNull(), // Array of image objects
-  uploadedAt: timestamp('uploaded_at').defaultNow(),
-  updatedAt: timestamp('updated_at').defaultNow()
-});
-
-// Add the relation to your documents table
-export const documentsRelations = relations(documents, ({ many }) => ({
-  pdfPages: many(pdfPages)
-}));

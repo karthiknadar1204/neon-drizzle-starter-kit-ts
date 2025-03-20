@@ -10,7 +10,6 @@ import path from 'path';
 import { storage } from '@/configs/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { processDocumentEmbeddings } from '@/lib/embeddings';
 
 type DocumentData = {
   userId: string; 
@@ -110,70 +109,14 @@ export async function saveDocument(documentData: DocumentData) {
           };
         }));
         
-        // Import pdf-img-convert dynamically
-        const pdf2img = await import("pdf-img-convert");
-        
-        // Process in batches of 20 pages
-        const batchSize = 20;
-        const batches = Math.ceil(pageCount / batchSize);
-        
-        // Store all image references
-        const imageReferences = [];
-        
-        for (let batchIndex = 0; batchIndex < batches; batchIndex++) {
-          const startPage = batchIndex * batchSize + 1;
-          const endPage = Math.min((batchIndex + 1) * batchSize, pageCount);
-          
-          console.log(`Processing batch ${batchIndex + 1}/${batches} (pages ${startPage}-${endPage})`);
-          
-          // Create array of page numbers for this batch
-          const pageNumbers = Array.from(
-            { length: endPage - startPage + 1 }, 
-            (_, i) => startPage + i
-          );
-          
-          // Convert PDF pages to images
-          const images = await pdf2img.convert(tempFilePath, {
-            page_numbers: pageNumbers,
-            scale: 1.5 // Adjust scale for better quality
-          });
-          
-          // Upload each image to Firebase
-          for (let i = 0; i < images.length; i++) {
-            const pageNumber = startPage + i;
-            
-            // Upload to Firebase
-            const storageRef = ref(storage, `documents/${documentId}/page_${pageNumber}.png`);
-            await uploadBytes(storageRef, images[i]);
-            const firebaseUrl = await getDownloadURL(storageRef);
-            
-            console.log(`Uploaded image for page ${pageNumber} to Firebase: ${firebaseUrl}`);
-            
-            // Add to image references
-            imageReferences.push({
-              pageNumber,
-              firebaseUrl,
-              imageKey: "", // Assuming imageKey is empty for now
-              metadata: null
-            });
-          }
-        }
-        
-        // Save all images in a single record
-        await savePdfPageImages(documentId, imageReferences);
-        
-        // Combine page content with image references
+        // Combine page content (without images)
         const combinedData = {
           documentId,
           pageCount,
-          pages: pagesContent.map(page => {
-            // Find the corresponding image reference
-            const imageRef = imageReferences.find(img => img.pageNumber === page.pageNumber);
-            return {
-              ...page,
-              image: imageRef ? imageRef.firebaseUrl : null
-            };
-          })
+          pages: pagesContent.map(page => ({
+            ...page,
+            image: null // No image references
+          }))
         };
         
         // Save combined data to a JSON file
@@ -183,7 +126,7 @@ export async function saveDocument(documentData: DocumentData) {
           JSON.stringify(combinedData, null, 2)
         );
         
-        console.log(`Saved combined content and image references to ${jsonFilePath}`);
+        console.log(`Saved content to ${jsonFilePath}`);
         
         // Clean up temp file
         await fs.unlink(tempFilePath);
@@ -196,15 +139,6 @@ export async function saveDocument(documentData: DocumentData) {
           .where(eq(documents.id, documentId));
           
         console.log(`Document ${documentId} processing completed successfully`);
-        
-        // Process document embeddings
-        try {
-          await processDocumentEmbeddings(documentId);
-          console.log(`Generated and stored embeddings for document ${documentId}`);
-        } catch (embeddingError) {
-          console.error("Error processing embeddings:", embeddingError);
-          // Continue with the process even if embeddings fail
-        }
         
       } catch (error) {
         console.error("=== ERROR PROCESSING PDF ===", error);
@@ -232,44 +166,45 @@ export async function saveDocument(documentData: DocumentData) {
 }
 
 // Function to save PDF page images to the database
-async function savePdfPageImages(documentId: number, imageReferences: Array<{
-  pageNumber: number,
-  firebaseUrl: string,
-  imageKey: string,
-  metadata?: any
-}>) {
-  // Format the images array for storage
-  const imagesData = imageReferences.map(img => ({
-    pageNumber: img.pageNumber,
-    imageUrl: img.firebaseUrl,
-    imageKey: img.imageKey || `documents/${documentId}/page_${img.pageNumber}.png`,
-    metadata: img.metadata || null,
-    uploadedAt: new Date()
-  }));
+// Kept for compatibility but will not be used in the current flow
+// async function savePdfPageImages(documentId: number, imageReferences: Array<{
+//   pageNumber: number,
+//   firebaseUrl: string,
+//   imageKey: string,
+//   metadata?: any
+// }>) {
+//   // Format the images array for storage
+//   const imagesData = imageReferences.map(img => ({
+//     pageNumber: img.pageNumber,
+//     imageUrl: img.firebaseUrl,
+//     imageKey: img.imageKey || `documents/${documentId}/page_${img.pageNumber}.png`,
+//     metadata: img.metadata || null,
+//     uploadedAt: new Date()
+//   }));
 
-  // Check if a record already exists for this document
-  const existingRecord = await db.query.pdfPages.findFirst({
-    where: eq(pdfPages.documentId, documentId)
-  });
 
-  if (existingRecord) {
-    // Update existing record
-    await db.update(pdfPages)
-      .set({ 
-        images: imagesData,
-        updatedAt: new Date()
-      })
-      .where(eq(pdfPages.documentId, documentId));
-  } else {
-    // Create new record
-    await db.insert(pdfPages)
-      .values({
-        documentId,
-        images: imagesData,
-        uploadedAt: new Date(),
-        updatedAt: new Date()
-      });
-  }
+//   const existingRecord = await db.query.pdfPages.findFirst({
+//     where: eq(pdfPages.documentId, documentId)
+//   });
+
+//   if (existingRecord) {
+
+//     await db.update(pdfPages)
+//       .set({ 
+//         images: imagesData,
+//         updatedAt: new Date()
+//       })
+//       .where(eq(pdfPages.documentId, documentId));
+//   } else {
+
+//     await db.insert(pdfPages)
+//       .values({
+//         documentId,
+//         images: imagesData,
+//         uploadedAt: new Date(),
+//         updatedAt: new Date()
+//       });
+//   }
   
-  return imagesData;
-}
+//   return imagesData;
+// }
